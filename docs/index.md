@@ -1,10 +1,15 @@
+````markdown
 # CARE Semantic Model Documentation
+---
+
+## Sections
 
 ```{toctree}
 :maxdepth: 2
-:caption: Getting started
+:caption: Getting Started
 
 introduction
+````
 
 ```{toctree}
 :maxdepth: 2
@@ -31,17 +36,19 @@ data_elements/Sex
 data_elements/Status 
 data_elements/Surgery 
 data_elements/Symptoms_onset
+```
 
 ```{toctree}
 :maxdepth: 2
-:caption: Implementation
+:caption: Implementation Guide
 
 implementation
-
+```
 
 ```{toctree}
 :maxdepth: 2
-:caption: Acknowledgement
+:caption: Acknowledgements
 
 cite
 acknowledgement
+```

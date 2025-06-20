@@ -4,7 +4,7 @@ This repository contains the source and documentation for the CARE Semantic Mode
 
 ## Documentation
 
-The full documentation is hosted on [Read the Docs](https://care-sm-docs.readthedocs.io/en/latest/). 
+The full documentation is hosted on [Read the Docs](https://care-sm.readthedocs.io/en/latest/i). 
 
 ## Quick links
 
