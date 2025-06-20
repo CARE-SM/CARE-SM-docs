@@ -1,15 +1,11 @@
-````markdown
 # CARE Semantic Model Documentation
----
-
-## Sections
 
 ```{toctree}
 :maxdepth: 2
 :caption: Getting Started
 
 introduction
-````
+```
 
 ```{toctree}
 :maxdepth: 2
