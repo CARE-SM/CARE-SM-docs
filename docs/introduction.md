@@ -14,11 +14,11 @@ CARE-SM provides a common structure to map healthcare-related concepts to machin
 - Enable semantic interoperability 
 
 
-### Genesis of CARE-SM
+## Genesis of CARE-SM
 
 CARE-SM is a more robust and matured representation of its precursor, the Common Data Element (CDE) semantic data model. The primary objective of its creation was to develop a semantic data model capable of representing [a set of common data elements for rare diseases registration](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf) recommended by the European Commission Joint Research Centre. CARE-SM stands as the matured iteration of this CDE semantic model, extending its capabilities to encompass the representation of all data elements pertinent to patient registries and clinical encounters.
 
-# Foundational Design of CARE-SM
+# Foundational design of CARE-SM
 
 ## Core Structure
 
@@ -42,7 +42,6 @@ This metadata requires the combination of RDF-Quads and RDF-Triples, rather than
 ![Figure 2: Context representation](https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png)
 
 Figure 2: Context representation
-
 
 List of Data Elements
 
@@ -80,5 +79,3 @@ List of Data Elements
   - [Biobank](https://care-sm.readthedocs.io/en/latest/Biobank.html)
   - [Consent](https://care-sm.readthedocs.io/en/latest/Consent.html)
   - [Clinical trial](https://care-sm.readthedocs.io/en/latest/Cclinical_trial.html)
-
-

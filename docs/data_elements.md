@@ -1,0 +1,569 @@
+# Demographics
+
+## Birthdate
+
+This data element is meant to define patient date of birth. The module describes the one of the common data elements group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses an personal attribute which is a date birth. This patient participates in a birthdate data capture process that has as output, the date of the birth (defined using ISO 8601 formatted date).
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthdate.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthdate.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470	
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+NCIT:Birthdate: http://purl.obolibrary.org/obo/NCIT_C68615
+
+
+## Birthyear
+
+This data element is meant to define patient date of birth. The module describes the one of the common data elements group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses an personal attribute which is the year of birth. This patient participates in a birthyear data capture process that has as output, the year in which this patient born.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthyear.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthyear.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470	
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+NCIT:Birth Year: http://purl.obolibrary.org/obo/NCIT_C83164
+
+
+ ## Deathdate
+
+ This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses an personal attribute which is a date of death. This patient participates in a date of death data capture assessment that has as output, the date of the death (defined using ISO 8601 formatted date).
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Deathdate.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Deathdate.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+NCIT:Deathdate: http://purl.obolibrary.org/obo/NCIT_C70810
+
+
+## Sex at birth
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses an personal attribute which is sex at birth. This patient participates in a sex data capture assessment that has as output, the patient sex.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Sex.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Sex.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470
+
+NCIT:Sex Code: http://purl.obolibrary.org/obo/NCIT_C160908
+
+NCIT:Female: http://purl.obolibrary.org/obo/NCIT_C16576
+
+NCIT:Male: http://purl.obolibrary.org/obo/NCIT_C20197
+
+NCIT:Undetermined: http://purl.obolibrary.org/obo/NCIT_C124294
+
+NCIT:Unknown: http://purl.obolibrary.org/obo/NCIT_C17998
+
+
+## Education level
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses an personal attribute which is the level of education. This patient participates in a education level assessment process that has as output, the value measured by International Standard Classification of Education.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Education.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Education.png">
+    </a>
+</p>
+
+**Domain_specific ontological terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Data Capture: http://purl.obolibrary.org/obo/NCIT_C142470
+
+NCIT:Education Level: http://purl.obolibrary.org/obo/NCIT_C17953
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272
+
+Wikidata:International Standard Classification of Education: https://www.wikidata.org/wiki/Q1390351
+
+# Patient-reported_outcomes
+
+## Questionnaire
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a questionnaire. Questionnaire specification defines a question(action specification), and its score as output.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Clinical or Research Assessment Question: http://purl.obolibrary.org/obo/NCIT_C91102
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272
+
+## Disability
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a questionnaire. Questionnaire protocol defines a question(activity), in this case, a disability assessment question and its score as output. Other representations of this question could require the use of defining the intensity as output, rather than a score.
+
+
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire-disability.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire-disability.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Clinical or Research Assessment Question: http://purl.obolibrary.org/obo/NCIT_C91102
+
+NCIT:Edmonton Symptom Assessment System: http://purl.obolibrary.org/obo/NCIT_C107391
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+NCIT:Disability: http://purl.obolibrary.org/obo/NCIT_C21007
+
+
+# Conditions_and_findings
+
+## Diagnosis
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses a medical condition which is a certain disease (measured in this case using ORDO codes). This patient participates in a diagnosis procedure that has as output, the observational result referencing its condition.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Diagnosis.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Diagnosis.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Diagnostic Procedure: http://purl.obolibrary.org/obo/NCIT_C18020
+
+NCIT:Diagnosis Code: http://purl.obolibrary.org/obo/NCIT_C154625
+
+NCIT:Undiagnosed: http://purl.obolibrary.org/obo/NCIT_C113725
+
+## Phenotype
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses a medical condition which is a certain sign/symptom/phenotype (measured in this case using HPO codes). This patient participates in a diagnosis procedure that has as output, the observational result referencing its condition.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Symptom.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Symptom.png">
+    </a>
+</p>
+
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Diagnostic Procedure: http://purl.obolibrary.org/obo/NCIT_C18020
+
+NCIT:Phenotype: http://purl.obolibrary.org/obo/NCIT_C16977
+
+# Clinical measurements
+
+## Corporal measurement
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses a personal attribute which is a body measurement (e.g. weight, height). This patient participates in a data capture process that has as output, the value of this examination and its units.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Body_measurement.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Body_measurement.png">
+    </a>
+</p>
+
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+NCIT:Personal Atribute: http://purl.obolibrary.org/obo/NCIT_C19332
+
+NCIT:Weight: http://purl.obolibrary.org/obo/NCIT_C25208
+
+NCIT:Height: http://purl.obolibrary.org/obo/NCIT_C25347
+
+NCIT:Body Mass Index: http://purl.obolibrary.org/obo/NCIT_C16358
+
+UO:Kilogram: http://purl.obolibrary.org/obo/UO_0000009
+
+
+## Laboratory measurement
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a laboratory testing process. At this process, the target of this medical intervention is defined, being a chemical component structure from an individual's body, the input is defined as the anatomic structure where this substance is extracted. Also this procedure has as output the observational result from this test and its value, measured among its unit of measurement.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Laboratory.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Laboratory.png">
+    </a>
+</p>
+
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Laboratory procedure: http://purl.obolibrary.org/obo/NCIT_C25294
+
+NCIT:Creatinine Clearance Adjusted for BSA: http://purl.obolibrary.org/obo/NCIT_C147324
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219
+
+NCIT:Blood: http://purl.obolibrary.org/obo/NCIT_C12434
+
+NCIT:Drug, Food, Chemical or Biomedical Material: http://purl.obolibrary.org/obo/NCIT_C1908
+
+NCIT:Creatinine: http://purl.obolibrary.org/obo/NCIT_C399
+
+UO:Milligram: http://purl.obolibrary.org/obo/UO_0000022
+
+
+## Medical imaging
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a medical imaging procedure that has as output, the resulting medical image (measured the source image ID) referencing its imaging finding. At this process, the target of this medical image is defined, being an anatomic structure or substance from an individual's body.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Imaging.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Imaging.png">
+    </a>
+</p>
+
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Imaging Technique: http://purl.obolibrary.org/obo/NCIT_C17369
+
+NCIT:X-Ray Imaging: http://purl.obolibrary.org/obo/NCIT_C38101
+
+NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219
+
+NCIT:Head: http://purl.obolibrary.org/obo/NCIT_C12419
+
+NCIT:Image Identifier: http://purl.obolibrary.org/obo/NCIT_C81289
+
+
+## Genetic assessment
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a genetic testing process related to identifying a patient genetic variants mutation using the gene and genetic variant identifiers (coded using HGVS/HGNC/OMIM nomenclature). Zygosity is also included as a genetic attribute referring to the output genetic variant. Specific molecular process and anatomical input samples are also included, associated with the genetic testing process.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Genotype.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Genotype.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Genetic Testing: http://purl.obolibrary.org/obo/NCIT_C15709
+
+NCIT:Microarray Analysis: http://purl.obolibrary.org/obo/NCIT_C18477
+
+NCIT:Blood Sample: http://purl.obolibrary.org/obo/NCIT_C17610 
+
+NCIT:Gene: http://purl.obolibrary.org/obo/NCIT_C16612
+
+NCIT:Gene Variant: http://purl.obolibrary.org/obo/NCIT_C97927
+
+NCIT:Protein: http://purl.obolibrary.org/obo/NCIT_C17021
+
+NCIT:Messenger RNA: http://purl.obolibrary.org/obo/NCIT_C813
+
+NCIT:Transfer RNA: http://purl.obolibrary.org/obo/NCIT_C816
+
+NCIT:Mitochondrial RNA: http://purl.obolibrary.org/obo/NCIT_C25975
+
+GENO:hemizygosity: http://purl.obolibrary.org/obo/GENO_0000134
+
+GENO:heterozygosity: http://purl.obolibrary.org/obo/GENO_0000135
+
+GENO:homozygosity: http://purl.obolibrary.org/obo/GENO_0000136
+
+GENO:nullizygosity: http://purl.obolibrary.org/obo/GENO_0000978
+
+GENO:compound heterozygosity: http://purl.obolibrary.org/obo/GENO_0000402
+
+# Patient-reported_outcomes
+
+## Questionnaire
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a questionnaire. Questionnaire specification defines a question(action specification), and its score as output.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Clinical or Research Assessment Question: http://purl.obolibrary.org/obo/NCIT_C91102
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272
+
+## Disability
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a questionnaire. Questionnaire protocol defines a question(activity), in this case, a disability assessment question and its score as output. Other representations of this question could require the use of defining the intensity as output, rather than a score.
+
+
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire-disability.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire-disability.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Clinical or Research Assessment Question: http://purl.obolibrary.org/obo/NCIT_C91102
+
+NCIT:Edmonton Symptom Assessment System: http://purl.obolibrary.org/obo/NCIT_C107391
+
+NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856
+
+NCIT:Disability: http://purl.obolibrary.org/obo/NCIT_C21007
+
+# Treatments and interventions
+
+## Medications
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a drug administration procedure. At this process, the agent of this medication is defined, being the drug prescribed and its route of administration. Also this procedure has as output the medication as a prescription and its value, measured among its unit of measurement and frequency.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Medication.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Medication.png">
+    </a>
+</p>
+
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Agent Administration: http://purl.obolibrary.org/obo/NCIT_C25409
+
+NCIT:Route of Administration: http://purl.obolibrary.org/obo/NCIT_C38114
+
+NCIT:Intravenous Route of Administration: http://purl.obolibrary.org/obo/NCIT_C38276
+
+NCIT:Drug Product Component: http://purl.obolibrary.org/obo/NCIT_C177929
+
+OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272
+
+UO:Milligram: http://purl.obolibrary.org/obo/UO_0000022
+
+NCIT:Dose: http://purl.obolibrary.org/obo/NCIT_C25488
+
+NCIT:Per Day: http://purl.obolibrary.org/obo/NCIT_C66968
+
+
+## Clinical surgery
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in a surgical intervention procedure. At this process, this process defines the the anatomic structure of the intervention and a clinical protocol.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Surgery.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Surgery.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Surgical Procedure: http://purl.obolibrary.org/obo/NCIT_C15329
+
+NCIT:Tumor Resection: http://purl.obolibrary.org/obo/NCIT_C164212
+
+OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272
+
+NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219
+
+NCIT:Lung Tissue: http://purl.obolibrary.org/obo/NCIT_C33024
+
+# Research
+
+## Biobank
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses a biological sample in a biobank, and its availability. This patient participates in a sampling procedure that has as output, the biological sample. In the module, a biobank participates as a target, measured as a global unique identifier.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Biobank.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Biobank.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+OBIB:sampling specimens for biobank: http://purl.obolibrary.org/obo/OBIB_0000668
+
+NCIT:Record of Retained Body Fluids or Tissue Sample: http://purl.obolibrary.org/obo/NCIT_C115570
+
+OBIB:biobank: http://purl.obolibrary.org/obo/OBIB_0000616
+
+NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219
+
+NCIT:Cerebrospinal Fluid: http://purl.obolibrary.org/obo/NCIT_C12692
+
+
+## Consent
+
+This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at [this link](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf).
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, participates in an informed consent process that has as output the permission to be contacted or reusing his/her data. This output refers to the consent given by the individual.
+
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Consent.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Consent.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+OBI:informed consent process: http://purl.obolibrary.org/obo/OBI_0000810
+
+DUI:data use permission: http://purl.obolibrary.org/obo/DUO_0000001
+
+OBIB:willingness to be contacted for a research study: http://purl.obolibrary.org/obo/OBIB_0000488
+
+## Clinical trials
+
+### Data visualization
+
+The module shows how the individual, defined as a patient, possesses a medical condition which is a certain disease (measured in this case using ORDO codes). This patient participates in a clinical trial that has as output, a clinical trial report referencing its condition. At this procedure, the patient participates in a clinical institute, measured in this case as a Hospital using a global unique identifier.
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Clinical_trials.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Clinical_trials.png">
+    </a>
+</p>
+
+**OBO Foundry terms used:**
+
+OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093
+
+NCIT:Clinical trial: http://purl.obolibrary.org/obo/NCIT_C71104
+
+NCIT:Clinical Trial Final Report: http://purl.obolibrary.org/obo/NCIT_C115575
+
+NCIT:Hospital: http://purl.obolibrary.org/obo/NCIT_C16696
