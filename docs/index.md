@@ -11,27 +11,13 @@ introduction
 :maxdepth: 2
 :caption: List of Data Elements
 
-data_elements/Biobank
-data_elements/Birthdate
-data_elements/Birthyear
-data_elements/Body_measurement
-data_elements/Clinical_trial
-data_elements/Consent
-data_elements/Deathdate
-data_elements/Diagnosis
-data_elements/Disability
-data_elements/Education
-data_elements/First_visit
-data_elements/Genotype
-data_elements/Imaging
-data_elements/Laboratory
-data_elements/Medication
-data_elements/Phenotype
-data_elements/Questionnaire
-data_elements/Sex
-data_elements/Status
-data_elements/Surgery
-data_elements/Symptoms_onset
+data_elements/Clinical_measurements
+data_elements/Conditions_and_findings
+data_elements/Demographics
+data_elements/Participation_and_timeline
+data_elements/Patient_reported_outcomes
+data_elements/Research
+data_elements/Treatments_and_interventions
 ```
 
 ```{toctree}
@@ -43,7 +29,7 @@ implementation
 
 ```{toctree}
 :maxdepth: 2
-:caption: Acknowledgements
+:caption: Citation and Acknowledgements
 
 cite
 acknowledgement

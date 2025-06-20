@@ -7,20 +7,16 @@ CARE-SM is built upon the [Semanticscience Integrated Ontology (SIO)](https://do
 Moreover, each instance within CARE-SM is associated with a domain-specific ontological class from the [OBO Foundry](http://obofoundry.org/). For instance, the representation of patient birthdate is described at an upper-class level using the ontological term [SIO:attribute](http://semanticscience.org/resource/SIO_000614) and, at a domain-specific level, as [ncit:Birthdate](http://purl.obolibrary.org/obo/NCIT_C68615). This dual ontological characterization enhances data interoperability and precise semantic descriptions.
 
 
-## Motivation
+## Motivation and Goals
 
 CARE-SM provides a common structure to map healthcare-related concepts to machine-readable knowledge graphs.
 
-## Goals
-
-- Enable semantic interoperability
+- Enable semantic interoperability 
 
 
-## Genesis of CARE-SM
+### Genesis of CARE-SM
 
-Evolved from the Common Data Element (CDE) semantic model, CARE-SM extends capabilities to cover all data elements related to patient registries and clinical encounters.
-
-
+CARE-SM is a more robust and matured representation of its precursor, the Common Data Element (CDE) semantic data model. The primary objective of its creation was to develop a semantic data model capable of representing [a set of common data elements for rare diseases registration](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf) recommended by the European Commission Joint Research Centre. CARE-SM stands as the matured iteration of this CDE semantic model, extending its capabilities to encompass the representation of all data elements pertinent to patient registries and clinical encounters.
 
 # Foundational Design of CARE-SM
 
@@ -48,7 +44,7 @@ This metadata requires the combination of RDF-Quads and RDF-Triples, rather than
 Figure 2: Context representation
 
 
-# List of Data Elements
+List of Data Elements
 
 - **Demographics:**
   - [Birthdate](https://care-sm.readthedocs.io/en/latest/Birthdate.html)
@@ -67,11 +63,9 @@ Figure 2: Context representation
   - [Phenotype](https://care-sm.readthedocs.io/en/latest/Phenotype.html)
 
 - **Clinical measurements:**
+  - [Corporal measurement](https://care-sm.readthedocs.io/en/latest/Body-measurement.html)
   - [Laboratory measurement](https://care-sm.readthedocs.io/en/latest/Laboratory.html)
-  - [Body measurement](https://care-sm.readthedocs.io/en/latest/Body-measurement.html)
   - [Medical imaging](https://care-sm.readthedocs.io/en/latest/Imaging.html)
-
-- **Molecular/Genetic measurements:**
   - [Genotype](https://care-sm.readthedocs.io/en/latest/Genotype.html)
 
 - **Treatments and interventions:**
