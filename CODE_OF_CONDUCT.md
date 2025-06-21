@@ -6,7 +6,7 @@
 
 We do not tolerate life forms who refuse to share this openness and respect towards others: Creatures that are not excellent to others are not welcome.
 
-If you are made uncomfortable as a community member, please let us know: You can contact [pablo.alarcon@upm.es](mailto:pablo.alarcon@upm.es).
+If you are made uncomfortable as a community member, please let us know: You can contact [pablo.alarcon@upm.es](mailto:pablo.alarcon@upm.es). 
 
 #### Attribution
 
