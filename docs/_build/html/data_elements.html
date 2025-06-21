@@ -1,0 +1,576 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demographics &mdash; CARE Semantic Model  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f03e79db" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick start" href="implementation.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            CARE Semantic Model
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#foundational-design-of-care-sm">Foundational design of CARE-SM</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">List of Data Elements</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Demographics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#birthdate">Birthdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#birthyear">Birthyear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deathdate">Deathdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sex">Sex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#education-level">Education level</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#participation-and-timeline">Participation and timeline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#first-confirmed-visit">First confirmed visit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#participation-status">Participation status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#symptoms-onset">Symptoms onset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#conditions-and-findings">Conditions and findings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#diagnosis">Diagnosis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#phenotype">Phenotype</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#clinical-and-molecular-measurements">Clinical and molecular measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#corporal-measurement">Corporal measurement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#laboratory-measurement">Laboratory measurement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#medical-imaging">Medical imaging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#genetic-testing">Genetic testing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#patient-reported-outcomes">Patient-reported outcomes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#questionnaire">Questionnaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disability">Disability</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#treatments-and-interventions">Treatments and interventions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#medication">Medication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#surgical-intervention">Surgical intervention</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#research">Research</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#biobank">Biobank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#consent">Consent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clinical-trial">Clinical trial</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html#implementation-workflows">Implementation workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit.html">CARE-SM Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">CARE-SM CSV Glossasy Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Citation and Acknowledgements</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cite.html">Cite Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">Acknowledgement</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CARE Semantic Model</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Demographics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/data_elements.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="demographics">
+<h1>Demographics<a class="headerlink" href="#demographics" title="Link to this heading"></a></h1>
+<section id="birthdate">
+<span id="id1"></span><h2>Birthdate<a class="headerlink" href="#birthdate" title="Link to this heading"></a></h2>
+<p>This data element is meant to define patient date of birth. The module describes the one of the common data elements group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses an personal attribute which is a date birth. This patient participates in a birthdate data capture process that has as output, the date of the birth (defined using ISO 8601 formatted date).</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthdate.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthdate.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:Birthdate: http://purl.obolibrary.org/obo/NCIT_C68615</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="birthyear">
+<span id="id2"></span><h2>Birthyear<a class="headerlink" href="#birthyear" title="Link to this heading"></a></h2>
+<p>This data element is meant to define patient date of birth. The module describes the one of the common data elements group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses an personal attribute which is the year of birth. This patient participates in a birthyear data capture process that has as output, the year in which this patient born.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthyear.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Birthyear.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:Birth Year: http://purl.obolibrary.org/obo/NCIT_C83164</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="deathdate">
+<span id="id3"></span><h2>Deathdate<a class="headerlink" href="#deathdate" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses an personal attribute which is a date of death. This patient participates in a date of death data capture assessment that has as output, the date of the death (defined using ISO 8601 formatted date).</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Deathdate.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Deathdate.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:Deathdate: http://purl.obolibrary.org/obo/NCIT_C70810</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="sex">
+<span id="id4"></span><h2>Sex<a class="headerlink" href="#sex" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses an personal attribute which is sex at birth. This patient participates in a sex data capture assessment that has as output, the patient sex.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Sex.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Sex.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Sex Code: http://purl.obolibrary.org/obo/NCIT_C160908</p>
+<p>NCIT:Female: http://purl.obolibrary.org/obo/NCIT_C16576</p>
+<p>NCIT:Male: http://purl.obolibrary.org/obo/NCIT_C20197</p>
+<p>NCIT:Undetermined: http://purl.obolibrary.org/obo/NCIT_C124294</p>
+<p>NCIT:Unknown: http://purl.obolibrary.org/obo/NCIT_C17998</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="education-level">
+<span id="education"></span><h2>Education level<a class="headerlink" href="#education-level" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses an personal attribute which is the level of education. This patient participates in a education level assessment process that has as output, the value measured by International Standard Classification of Education.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Education.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Education.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data Capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Education Level: http://purl.obolibrary.org/obo/NCIT_C17953</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272</p>
+<p>Wikidata:International Standard Classification of Education: https://www.wikidata.org/wiki/Q1390351</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+</section>
+<section id="participation-and-timeline">
+<h1>Participation and timeline<a class="headerlink" href="#participation-and-timeline" title="Link to this heading"></a></h1>
+<section id="first-confirmed-visit">
+<span id="first-visit"></span><h2>First confirmed visit<a class="headerlink" href="#first-confirmed-visit" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses an personal attribute which is a date of first confirmed visit. This patient participates in a date data capture process that has as output, the date of first confirmed visit (defined using ISO 8601 formatted date).</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-First_visit.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-First_visit.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:First Confirmed Visit: http://purl.obolibrary.org/obo/NCIT_C164021</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="participation-status">
+<span id="status"></span><h2>Participation status<a class="headerlink" href="#participation-status" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses an personal attribute which is its participation status at the medical record. This patient participates in a data capture procedure that has as output, the patient participation status.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Status.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Status.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Status Code: http://purl.obolibrary.org/obo/NCIT_C164628</p>
+<p>NCIT:Lost To Follow-Up: http://purl.obolibrary.org/obo/NCIT_C48227</p>
+<p>NCIT:Refusal to Participate http://purl.obolibrary.org/obo/NCIT_C124784</p>
+<p>SIO:dead: http://semanticscience.org/resource/SIO_010059</p>
+<p>SIO:Alive: http://semanticscience.org/resource/SIO_010058</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="symptoms-onset">
+<span id="id5"></span><h2>Symptoms onset<a class="headerlink" href="#symptoms-onset" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a questionnaire. Questionnaire protocol defines a question(activity), in this case, a symptom onset assessment question and its output. the output could be defined using ISO 8601 formatted for date, or an integer for age.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Symptoms_onset.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Symptoms_onset.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data Capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:Symptom Onset: http://purl.obolibrary.org/obo/NCIT_C124353</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+</section>
+<section id="conditions-and-findings">
+<h1>Conditions and findings<a class="headerlink" href="#conditions-and-findings" title="Link to this heading"></a></h1>
+<section id="diagnosis">
+<span id="id6"></span><h2>Diagnosis<a class="headerlink" href="#diagnosis" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses a medical condition which is a certain disease (measured in this case using ORDO codes). This patient participates in a diagnosis procedure that has as output, the observational result referencing its condition.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Diagnosis.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Diagnosis.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Diagnostic Procedure: http://purl.obolibrary.org/obo/NCIT_C18020</p>
+<p>NCIT:Diagnosis Code: http://purl.obolibrary.org/obo/NCIT_C154625</p>
+<p>NCIT:Undiagnosed: http://purl.obolibrary.org/obo/NCIT_C113725</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="phenotype">
+<span id="id7"></span><h2>Phenotype<a class="headerlink" href="#phenotype" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses a medical condition which is a certain sign/symptom/phenotype (measured in this case using HPO codes). This patient participates in a diagnosis procedure that has as output, the observational result referencing its condition.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Symptom.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Symptom.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Diagnostic Procedure: http://purl.obolibrary.org/obo/NCIT_C18020</p>
+<p>NCIT:Phenotype: http://purl.obolibrary.org/obo/NCIT_C16977</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+</section>
+<section id="clinical-and-molecular-measurements">
+<h1>Clinical and molecular measurements<a class="headerlink" href="#clinical-and-molecular-measurements" title="Link to this heading"></a></h1>
+<section id="corporal-measurement">
+<span id="corporal"></span><h2>Corporal measurement<a class="headerlink" href="#corporal-measurement" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses a personal attribute which is a body measurement (e.g. weight, height). This patient participates in a data capture process that has as output, the value of this examination and its units.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Body_measurement.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Body_measurement.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Data capture: http://purl.obolibrary.org/obo/NCIT_C142470</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:Personal Atribute: http://purl.obolibrary.org/obo/NCIT_C19332</p>
+<p>NCIT:Weight: http://purl.obolibrary.org/obo/NCIT_C25208</p>
+<p>NCIT:Height: http://purl.obolibrary.org/obo/NCIT_C25347</p>
+<p>NCIT:Body Mass Index: http://purl.obolibrary.org/obo/NCIT_C16358</p>
+<p>UO:Kilogram: http://purl.obolibrary.org/obo/UO_0000009</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="laboratory-measurement">
+<span id="laboratory"></span><h2>Laboratory measurement<a class="headerlink" href="#laboratory-measurement" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a laboratory testing process. At this process, the target of this medical intervention is defined, being a chemical component structure from an individual’s body, the input is defined as the anatomic structure where this substance is extracted. Also this procedure has as output the observational result from this test and its value, measured among its unit of measurement.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Laboratory.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Laboratory.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Laboratory procedure: http://purl.obolibrary.org/obo/NCIT_C25294</p>
+<p>NCIT:Creatinine Clearance Adjusted for BSA: http://purl.obolibrary.org/obo/NCIT_C147324</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219</p>
+<p>NCIT:Blood: http://purl.obolibrary.org/obo/NCIT_C12434</p>
+<p>NCIT:Drug, Food, Chemical or Biomedical Material: http://purl.obolibrary.org/obo/NCIT_C1908</p>
+<p>NCIT:Creatinine: http://purl.obolibrary.org/obo/NCIT_C399</p>
+<p>UO:Milligram: http://purl.obolibrary.org/obo/UO_0000022</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="medical-imaging">
+<span id="imaging"></span><h2>Medical imaging<a class="headerlink" href="#medical-imaging" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a medical imaging procedure that has as output, the resulting medical image (measured the source image ID) referencing its imaging finding. At this process, the target of this medical image is defined, being an anatomic structure or substance from an individual’s body.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Imaging.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Imaging.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Imaging Technique: http://purl.obolibrary.org/obo/NCIT_C17369</p>
+<p>NCIT:X-Ray Imaging: http://purl.obolibrary.org/obo/NCIT_C38101</p>
+<p>NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219</p>
+<p>NCIT:Head: http://purl.obolibrary.org/obo/NCIT_C12419</p>
+<p>NCIT:Image Identifier: http://purl.obolibrary.org/obo/NCIT_C81289</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="genetic-testing">
+<span id="genotype"></span><h2>Genetic testing<a class="headerlink" href="#genetic-testing" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a genetic testing process related to identifying a patient genetic variants mutation using the gene and genetic variant identifiers (coded using HGVS/HGNC/OMIM nomenclature). Zygosity is also included as a genetic attribute referring to the output genetic variant. Specific molecular process and anatomical input samples are also included, associated with the genetic testing process.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Genotype.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Genotype.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Genetic Testing: http://purl.obolibrary.org/obo/NCIT_C15709</p>
+<p>NCIT:Microarray Analysis: http://purl.obolibrary.org/obo/NCIT_C18477</p>
+<p>NCIT:Blood Sample: http://purl.obolibrary.org/obo/NCIT_C17610</p>
+<p>NCIT:Gene: http://purl.obolibrary.org/obo/NCIT_C16612</p>
+<p>NCIT:Gene Variant: http://purl.obolibrary.org/obo/NCIT_C97927</p>
+<p>NCIT:Protein: http://purl.obolibrary.org/obo/NCIT_C17021</p>
+<p>NCIT:Messenger RNA: http://purl.obolibrary.org/obo/NCIT_C813</p>
+<p>NCIT:Transfer RNA: http://purl.obolibrary.org/obo/NCIT_C816</p>
+<p>NCIT:Mitochondrial RNA: http://purl.obolibrary.org/obo/NCIT_C25975</p>
+<p>GENO:hemizygosity: http://purl.obolibrary.org/obo/GENO_0000134</p>
+<p>GENO:heterozygosity: http://purl.obolibrary.org/obo/GENO_0000135</p>
+<p>GENO:homozygosity: http://purl.obolibrary.org/obo/GENO_0000136</p>
+<p>GENO:nullizygosity: http://purl.obolibrary.org/obo/GENO_0000978</p>
+<p>GENO:compound heterozygosity: http://purl.obolibrary.org/obo/GENO_0000402</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+</section>
+<section id="patient-reported-outcomes">
+<h1>Patient-reported outcomes<a class="headerlink" href="#patient-reported-outcomes" title="Link to this heading"></a></h1>
+<section id="questionnaire">
+<span id="id8"></span><h2>Questionnaire<a class="headerlink" href="#questionnaire" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a questionnaire. Questionnaire specification defines a question(action specification), and its score as output.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Clinical or Research Assessment Question: http://purl.obolibrary.org/obo/NCIT_C91102</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="disability">
+<h2>Disability<a class="headerlink" href="#disability" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a questionnaire. Questionnaire protocol defines a question(activity), in this case, a disability assessment question and its score as output. Other representations of this question could require the use of defining the intensity as output, rather than a score.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire-disability.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Questionnaire-disability.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Clinical or Research Assessment Question: http://purl.obolibrary.org/obo/NCIT_C91102</p>
+<p>NCIT:Edmonton Symptom Assessment System: http://purl.obolibrary.org/obo/NCIT_C107391</p>
+<p>NCIT:Observation Result: http://purl.obolibrary.org/obo/NCIT_C70856</p>
+<p>NCIT:Disability: http://purl.obolibrary.org/obo/NCIT_C21007</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+</section>
+<section id="treatments-and-interventions">
+<h1>Treatments and interventions<a class="headerlink" href="#treatments-and-interventions" title="Link to this heading"></a></h1>
+<section id="medication">
+<span id="id9"></span><h2>Medication<a class="headerlink" href="#medication" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a drug administration procedure. At this process, the agent of this medication is defined, being the drug prescribed and its route of administration. Also this procedure has as output the medication as a prescription and its value, measured among its unit of measurement and frequency.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Medication.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Medication.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Agent Administration: http://purl.obolibrary.org/obo/NCIT_C25409</p>
+<p>NCIT:Route of Administration: http://purl.obolibrary.org/obo/NCIT_C38114</p>
+<p>NCIT:Intravenous Route of Administration: http://purl.obolibrary.org/obo/NCIT_C38276</p>
+<p>NCIT:Drug Product Component: http://purl.obolibrary.org/obo/NCIT_C177929</p>
+<p>OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272</p>
+<p>UO:Milligram: http://purl.obolibrary.org/obo/UO_0000022</p>
+<p>NCIT:Dose: http://purl.obolibrary.org/obo/NCIT_C25488</p>
+<p>NCIT:Per Day: http://purl.obolibrary.org/obo/NCIT_C66968</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="surgical-intervention">
+<span id="surgery"></span><h2>Surgical intervention<a class="headerlink" href="#surgical-intervention" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in a surgical intervention procedure. At this process, this process defines the the anatomic structure of the intervention and a clinical protocol.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Surgery.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Surgery.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Surgical Procedure: http://purl.obolibrary.org/obo/NCIT_C15329</p>
+<p>NCIT:Tumor Resection: http://purl.obolibrary.org/obo/NCIT_C164212</p>
+<p>OBI:protocol: http://purl.obolibrary.org/obo/OBI_0000272</p>
+<p>NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219</p>
+<p>NCIT:Lung Tissue: http://purl.obolibrary.org/obo/NCIT_C33024</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+</section>
+<section id="research">
+<h1>Research<a class="headerlink" href="#research" title="Link to this heading"></a></h1>
+<section id="biobank">
+<span id="id10"></span><h2>Biobank<a class="headerlink" href="#biobank" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses a biological sample in a biobank, and its availability. This patient participates in a sampling procedure that has as output, the biological sample. In the module, a biobank participates as a target, measured as a global unique identifier.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Biobank.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Biobank.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>OBIB:sampling specimens for biobank: http://purl.obolibrary.org/obo/OBIB_0000668</p>
+<p>NCIT:Record of Retained Body Fluids or Tissue Sample: http://purl.obolibrary.org/obo/NCIT_C115570</p>
+<p>OBIB:biobank: http://purl.obolibrary.org/obo/OBIB_0000616</p>
+<p>NCIT:Anatomic Structure, System, or Substance: http://purl.obolibrary.org/obo/NCIT_C12219</p>
+<p>NCIT:Cerebrospinal Fluid: http://purl.obolibrary.org/obo/NCIT_C12692</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+<section id="consent">
+<span id="id11"></span><h2>Consent<a class="headerlink" href="#consent" title="Link to this heading"></a></h2>
+<p>This module describes the data element in the Common Data Elemments group. These elements, defined by the JRC, can be found on the EU RD Platform at <a class="reference external" href="https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf">this link</a>.</p>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, participates in an informed consent process that has as output the permission to be contacted or reusing his/her data. This output refers to the consent given by the individual.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Consent.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Consent.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>OBI:informed consent process: http://purl.obolibrary.org/obo/OBI_0000810</p>
+<p>DUI:data use permission: http://purl.obolibrary.org/obo/DUO_0000001</p>
+<p>OBIB:willingness to be contacted for a research study: http://purl.obolibrary.org/obo/OBIB_0000488</p>
+<p><strong>DISCLAIMER:</strong> This element is not being implemented, its only an incomplete and limitated representation of patient consent. If you are interested in using it or implementing it, please contact us.</p>
+<p>(clinical_trial)</p>
+</section>
+<section id="clinical-trial">
+<h2>Clinical trial<a class="headerlink" href="#clinical-trial" title="Link to this heading"></a></h2>
+<p><strong>Data visualization</strong></p>
+<p>The module shows how the individual, defined as a patient, possesses a medical condition which is a certain disease (measured in this case using ORDO codes). This patient participates in a clinical trial that has as output, a clinical trial report referencing its condition. At this procedure, the patient participates in a clinical institute, measured in this case as a Hospital using a global unique identifier.</p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Clinical_trials.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Clinical_trials.png">
+    </a>
+</p>
+<p><strong>OBO Foundry terms used:</strong></p>
+<p>OBI:patient role: http://purl.obolibrary.org/obo/OBI_0000093</p>
+<p>NCIT:Clinical trial: http://purl.obolibrary.org/obo/NCIT_C71104</p>
+<p>NCIT:Clinical Trial Final Report: http://purl.obolibrary.org/obo/NCIT_C115575</p>
+<p>NCIT:Hospital: http://purl.obolibrary.org/obo/NCIT_C16696</p>
+<p><strong>RDF-Quad Examples:</strong> Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF">CARE-SM Implementation Github repository</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="implementation.html" class="btn btn-neutral float-right" title="Quick start" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
