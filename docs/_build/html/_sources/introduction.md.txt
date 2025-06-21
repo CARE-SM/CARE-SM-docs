@@ -24,7 +24,9 @@ CARE-SM is built upon the [Semanticscience Integrated Ontology (SIO)](https://do
 
 Moreover, each instance within CARE-SM is associated with a domain-specific ontological class from the [OBO Foundry](http://obofoundry.org/). For instance, the representation of patient birthdate is described at an upper-class level using the ontological term [SIO:attribute](http://semanticscience.org/resource/SIO_000614) and, at a domain-specific level, as [ncit:Birthdate](http://purl.obolibrary.org/obo/NCIT_C68615). This dual ontological characterization enhances data interoperability and precise semantic descriptions.
 
-![Figure 1: Core structure](https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png)
+<p align="center"> 
+  <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png"> 
+<p align="center" ><b>Figure 1: Core structure </b></p>
 
 
 ## Contextual Layer
@@ -37,11 +39,11 @@ In addition to the patient's timeline and temporal information, common context c
 
 This metadata requires the combination of RDF-Quads and RDF-Triples, rather than only RDF Triples used for regular knowledge graphs. The core structure of the model is represented using RDF-Quad, containing as a fourth element (Quad) the same context ID URL. This URL is used as the subject for other RDF Triples that define the metadata layer (see Figure 2).
 
-![Figure 2: Context representation](https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png)
+<p align="center"> 
+  <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png"> 
+<p align="center" ><b>Figure 2: Context representation </b></p>
 
-Figure 2: Context representation
-
-List of Data Elements
+**List of Data Elements**
 
 - **Demographics:**
   - [Birthdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthdate)

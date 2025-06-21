@@ -124,7 +124,9 @@
 <h2>Core Structure<a class="headerlink" href="#core-structure" title="Link to this heading"></a></h2>
 <p>CARE-SM is built upon the <a class="reference external" href="https://doi.org/10.1186/2041-1480-5-14">Semanticscience Integrated Ontology (SIO)</a> as its core structural schema. SIO is used to define every concept within the data model, utilizing upper-class classes and properties. This knowledge graph serves as a “scaffold” that holds every data element within its structure (see Figure 1). By a combination of these instances defined by SIO, it becomes possible to represent every clinical entry comprehensively.</p>
 <p>Moreover, each instance within CARE-SM is associated with a domain-specific ontological class from the <a class="reference external" href="http://obofoundry.org/">OBO Foundry</a>. For instance, the representation of patient birthdate is described at an upper-class level using the ontological term <a class="reference external" href="http://semanticscience.org/resource/SIO_000614">SIO:attribute</a> and, at a domain-specific level, as <a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C68615">ncit:Birthdate</a>. This dual ontological characterization enhances data interoperability and precise semantic descriptions.</p>
-<p><img alt="Figure 1: Core structure" src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png" /></p>
+<p align="center"> 
+  <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png"> 
+<p align="center" ><b>Figure 1: Core structure </b></p>
 </section>
 <section id="contextual-layer">
 <h2>Contextual Layer<a class="headerlink" href="#contextual-layer" title="Link to this heading"></a></h2>
@@ -132,9 +134,10 @@
 <p>This metadata describes the context of the data represented in the core structure model, giving some temporal information to each data element. This structure is preserved even when date/time are the core observation of the model (e.g., date of symptom onset). The context layer creates a timeline of events around every data element, allowing the model to represent not only individual patient registry entries but also patient clinical encounters in a precise way.</p>
 <p>In addition to the patient’s timeline and temporal information, common context can be grouped into other arbitrary data elements by connecting them through event nodes. This event has a common context between data elements for cases where multiple data elements share a unique relationship (like conditions/treatment scenarios, visit-based aggregated information). It’s not mandatory to implement this in your model, but it is made possible by the design.</p>
 <p>This metadata requires the combination of RDF-Quads and RDF-Triples, rather than only RDF Triples used for regular knowledge graphs. The core structure of the model is represented using RDF-Quad, containing as a fourth element (Quad) the same context ID URL. This URL is used as the subject for other RDF Triples that define the metadata layer (see Figure 2).</p>
-<p><img alt="Figure 2: Context representation" src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png" /></p>
-<p>Figure 2: Context representation</p>
-<p>List of Data Elements</p>
+<p align="center"> 
+  <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png"> 
+<p align="center" ><b>Figure 2: Context representation </b></p>
+<p><strong>List of Data Elements</strong></p>
 <ul class="simple">
 <li><p><strong>Demographics:</strong></p>
 <ul>
