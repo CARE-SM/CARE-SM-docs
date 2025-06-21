@@ -46,36 +46,36 @@ Figure 2: Context representation
 List of Data Elements
 
 - **Demographics:**
-  - [Birthdate](https://care-sm.readthedocs.io/en/latest/Birthdate.html)
-  - [Birthyear](https://care-sm.readthedocs.io/en/latest/Birthyear.html)
-  - [Deathdate](https://care-sm.readthedocs.io/en/latest/Deathdate.html)
-  - [Sex](https://care-sm.readthedocs.io/en/latest/Sex.html)
-  - [Education level](https://care-sm.readthedocs.io/en/latest/Education.html)
+  - [Birthdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthdate)
+  - [Birthyear](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthyear)
+  - [Deathdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#deathdate)
+  - [Sex](https://care-sm.readthedocs.io/en/latest/data_elements.html#sex)
+  - [Education level](https://care-sm.readthedocs.io/en/latest/data_elements.html#education-level)
 
-- **Participation & Timeline:**
-  - [First confirmed visit](https://care-sm.readthedocs.io/en/latest/First_visit.html)
-  - [Participation status](https://care-sm.readthedocs.io/en/latest/Status.html)
-  - [Symptoms onset](https://care-sm.readthedocs.io/en/latest/Symptoms_onset.html)
+- **Participation and timeline:**
+  - [First confirmed visit](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthdate)
+  - [Participation status](https://care-sm.readthedocs.io/en/latest/data_elements.html#participation-status)
+  - [Symptoms onset](https://care-sm.readthedocs.io/en/latest/data_elements.html#symptoms-onset)
 
 - **Conditions and findings:**
-  - [Diagnosis](https://care-sm.readthedocs.io/en/latest/Diagnosis.html)
-  - [Phenotype](https://care-sm.readthedocs.io/en/latest/Phenotype.html)
+  - [Diagnosis](https://care-sm.readthedocs.io/en/latest/data_elements.html#diagnosis)
+  - [Phenotype](https://care-sm.readthedocs.io/en/latest/data_elements.html#phenotype)
 
 - **Clinical measurements:**
-  - [Corporal measurement](https://care-sm.readthedocs.io/en/latest/Body-measurement.html)
-  - [Laboratory measurement](https://care-sm.readthedocs.io/en/latest/Laboratory.html)
-  - [Medical imaging](https://care-sm.readthedocs.io/en/latest/Imaging.html)
-  - [Genotype](https://care-sm.readthedocs.io/en/latest/Genotype.html)
+  - [Corporal measurement](https://care-sm.readthedocs.io/en/latest/data_elements.html#corporal-measurements)
+  - [Laboratory measurement](https://care-sm.readthedocs.io/en/latest/data_elements.html#laboratory-measurement)
+  - [Medical imaging](https://care-sm.readthedocs.io/en/latest/data_elements.html#medical-imaging)
+  - [Genetic testing](https://care-sm.readthedocs.io/en/latest/data_elements.html#genetic-testing)
 
 - **Treatments and interventions:**
-  - [Medication](https://care-sm.readthedocs.io/en/latest/Medication.html)
-  - [Surgery](https://care-sm.readthedocs.io/en/latest/Surgery.html)
+  - [Medication](https://care-sm.readthedocs.io/en/latest/data_elements.html#medication)
+  - [Surgery](https://care-sm.readthedocs.io/en/latest/data_elements.html#surgical-intervention)
 
-- **Patient-reported Outcomes:**
-  - [Questionnaire](https://care-sm.readthedocs.io/en/latest/Questionnaire.html)
-  - [Disability](https://care-sm.readthedocs.io/en/latest/Disability.html)
+- **Patient-reported outcomes:**
+  - [Questionnaire](https://care-sm.readthedocs.io/en/latest/data_elements.html#questionnaire)
+  - [Disability](https://care-sm.readthedocs.io/en/latest/data_elements.html#disability)
 
 - **Research samples:**
-  - [Biobank](https://care-sm.readthedocs.io/en/latest/Biobank.html)
-  - [Consent](https://care-sm.readthedocs.io/en/latest/Consent.html)
-  - [Clinical trial](https://care-sm.readthedocs.io/en/latest/Cclinical_trial.html)
+  - [Biobank](https://care-sm.readthedocs.io/en/latest/data_elements.html#biobank)
+  - [Consent](https://care-sm.readthedocs.io/en/latest/data_elements.html#consent)
+  - [Clinical trial](https://care-sm.readthedocs.io/en/latest/data_elements.html#clinical-trial)
