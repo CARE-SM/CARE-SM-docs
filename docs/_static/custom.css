@@ -1,0 +1,8 @@
+/* Force full-width layout */
+
+.wy-nav-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 2em;
+    margin: 0;
+}
