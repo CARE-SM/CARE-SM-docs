@@ -10,7 +10,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
    - `model`, `pid`, `event_id`, `value`, `age`, `value_datatype`, `valueIRI`, `activity`, `unit`, `input`, `target`, `protocol_id`, `frequency_type`, `frequency_value`, `agent`, `startdate`, `enddate`, `comments`
 
    *Example:*
-   ```csv
+   ```text
    model,pid,event_id,value,age,value_datatype,valueIRI,activity,unit,input,target,protocol_id,frequency_type,frequency_value,agent,startdate,enddate,comments
    ,,,,,,,,,,,,,,,,,
    ```
@@ -18,7 +18,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
    Each data entry needs specific fields (not all fields are mandatory). See the glossary below for details.
 
     *Example:*
-    ```csv
+    ```text
     model,pid,event_id,value,age,value_datatype,valueIRI,activity,unit,input,target,protocol_id,frequency_type,frequency_value,agent,startdate,enddate,comments
     Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-19,,
     ```
@@ -26,40 +26,42 @@ This guide explains how to structure, populate, and utilize CSV files for patien
     For more examples, refer to the [`exemplar_data`](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/data) folder.
 
 ## Data Element Glossary
-
+<!-- 
 * Demographics:
-    * [Birthdate](#birthdate)
-    * [Birthyear](#birthyear)
-    * [Deathdate](#deathdate)
-    * [Sex](#sex)
-    * [Education level](#education)
+    * {ref}`birthdate`
+    * {ref}`birthyear`
+    * {ref}`deathdate`
+    * {ref}`sex`
+    * {ref}`education`
 
 * Participation and Timeline:
-    * [First confirmed visit](#first-confirmed-visit)
-    * [Participation status](#participation-status)
-    * [Symptoms onset](#symptoms-onset)
+    * {ref}`first_visit`
+    * {ref}`status`
+    * {ref}`symptoms_onset`
 
 * Conditions and findings:
-    * [Diagnosis](#diagnosis)
-    * [Phenotype](#phenotype)
+    * {ref}`diagnosis`
+    * {ref}`phenotype`
 
 * Clinical and molecular measurements:
-    * [Laboratory measurement](#laboratory)
-    * [Corporal measurement](#corporal)
-    * [Medical imaging](#medical-imaging)
-    * [Genetic](#genetic)
+    * {ref}`laboratory`
+    * {ref}`corporal`
+    * {ref}`imaging`
+    * {ref}`genotype`
 
 * Patient-reported outcomes:
-    * [Disability](#disability)
-    * [Questionnaire](#questionnaire)
+    * {ref}`disability`
+    * {ref}`questionnaire`
 
-* Treatment and intervertions:
-    * [Medication](#medication)
-    * [Surgery](#surgery)
+* Treatment and interventions:
+    * {ref}`medication`
+    * {ref}`surgery`
 
 * Research:
-    * [Biobank](#biobank)
-    * [Clinical trial](#clinical-trial)
+    * {ref}`biobank`
+    * {ref}`clinical_trial`
+-->
+
 
 **Legend:**
 
@@ -69,6 +71,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 
 Here you can find the list of data elements and the columns required to be defined. Those that are optional, feel free to add them. If not, leave them empty.
 
+(birthdate)=
 ### Birthdate
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -92,6 +95,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
 
+(birthyear)=
 ### Birthyear
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -115,6 +119,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
 
+(deathdate)=
 ### Deathdate
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Deathdate
@@ -136,7 +141,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
-
+(first-visit)=
 ### First Confirmed Visit
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: First_visit
@@ -158,6 +163,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(sex)=
 ### Sex
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -185,7 +191,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
-
+(status)=
 ### Participation status
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Status
@@ -211,6 +217,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
 
+(education)=
 ### Education
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Education
@@ -232,6 +239,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(phenotype)=
 ### Phenotype
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -255,6 +263,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(diagnosis)=
 ### Diagnosis
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -278,6 +287,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(genotype)=
 ### Genotype
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -360,6 +370,8 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
 -->
+
+(biobank)=
 ### Biobank
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Biobank
@@ -381,6 +393,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(symptoms_onset)=
 ### Symptoms onset
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -404,6 +417,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(disability)=
 ### Disability
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Disability
@@ -425,6 +439,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(questionnaire)=
 ### Questionnaire
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Questionnaire
@@ -446,7 +461,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
 
-
+(corporal)=
 ### Corporal
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Corporal
@@ -471,6 +486,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(laboratory)=
 ### Laboratory
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Laboratory
@@ -492,6 +508,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(imaging)=
 ### Medical imaging
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Imaging
@@ -513,6 +530,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(medication)=
 ### Medication
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Medication
@@ -534,6 +552,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(surgery)=
 ### Surgery
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Surgery
@@ -555,6 +574,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 
+(clinical_trial)=
 ### Clinical trial
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Clinical_trial
