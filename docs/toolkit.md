@@ -1,6 +1,6 @@
 # CARE-SM Toolkit
 
-## CSV datatable toolkit for CARE semantic model implementation
+## Why to use it?
 
 The implementation of the Clinical And Registry Entries (CARE) Semantic Model for CSV data entails a meticulous and technically advanced workflow. By leveraging the power of the CARE-SM, YARRRML templates and incorporating the critical curation step executed by the CARE-SM toolkit, this implementation achieves robustness, accuracy, and reliability in generating RDF-based CDE-oriented patient data.
 
@@ -20,13 +20,13 @@ The toolkit serves as a module dedicated to performing a curation step prior to 
 
 ## Requirements 
 
-- In order to use CARE-SM Toolkit functionality:
+* In order to use CARE-SM Toolkit functionality:
 * All CSV files **MUST** be named according the data tags described at the CARE-SM glossary, documented at [CARE-SM implementation](https://github.com/CARE-SM/CARE-SM-Implementation/blob/main/CSV/README.md) E.g.: `Diagnosis.csv`, `Birthdate.csv`
 
  * All your CSV data content **MUST** be compatible with the CARE-SM glossary, documented at [CARE-SM implementation](https://github.com/CARE-SM/CARE-SM-Implementation/blob/main/CSV/README.md)
 
 
-## Dockerized implementation
+## Docker
 
 There's a Docker-based implementation controlled via API (using FastAPI) that you can use for mounting this data transformation step as a part of your CARE-SM implementation.
 
