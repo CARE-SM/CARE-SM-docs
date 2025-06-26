@@ -6,8 +6,8 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick start &mdash; CARE Semantic Model  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+  <title>Implementation workflows &mdash; CARE Semantic Model  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f03e79db" />
 
@@ -61,13 +61,12 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Implementation Guide</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#implementation-workflows">Implementation workflows</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Implementation workflows</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#fair-in-a-box-software">FAIR-in-a-box software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#standalone-implementation">Standalone implementation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exemplar-data">Exemplar data</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#example-material">Example material</a></li>
 <li class="toctree-l1"><a class="reference internal" href="toolkit.html">CARE-SM Toolkit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">CARE-SM CSV Glossasy Documentation</a></li>
 </ul>
@@ -91,7 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Quick start</li>
+      <li class="breadcrumb-item active">Implementation workflows</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/implementation.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -101,13 +100,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="quick-start">
-<h1>Quick start<a class="headerlink" href="#quick-start" title="Link to this heading"></a></h1>
+  <section id="implementation-workflows">
+<h1>Implementation workflows<a class="headerlink" href="#implementation-workflows" title="Link to this heading"></a></h1>
+<p><strong>Quick start</strong></p>
 <p>To jump directly to the “just tell me what I have to do to make this work” using FAIR-in-a-box software, please <a class="reference external" href="https://github.com/ejp-rd-vp/FiaB/tree/main/CARE-SM-Fiab">follow this link</a>.</p>
 <p>If you want to understand more deeply what you are doing, read on!</p>
-</section>
-<section id="implementation-workflows">
-<h1>Implementation workflows<a class="headerlink" href="#implementation-workflows" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://github.com/CARE-SM/CARE-Semantic-Model">CARE Semantic Model</a> defines a set of clinical data elements used in the healthcare domain of knowledge. However, it doesn’t specify a mechanism for bringing these to life.</p>
 <p>The proposed implementation workflows described in this repository (both Fiab and Standalone) uses a common set of technologies for the whole transformation of patient data into a RDF-representation.</p>
 <ol class="arabic">
@@ -121,7 +118,7 @@
 <p>This implementation requires two main transformation steps:</p>
 <ol class="arabic">
 <li><p><strong>Data pre-validation and adaptation</strong></p>
-<p>After creating this CSV template with the patient data on it, this CSV template needs to be adapted to YARRRML template before performing RDF transformation. This modification add additional fields and automatically make certain translations that reduce the complexity and burden on the data provider. This translation is executed by a component called <a class="reference internal" href="#care-sm-toolkit"><span class="xref myst">CARE-SM Toolkit</span></a>.</p>
+<p>After creating this CSV template with the patient data on it, this CSV template needs to be adapted to YARRRML template before performing RDF transformation. This modification add additional fields and automatically make certain translations that reduce the complexity and burden on the data provider. This translation is executed by a component called <a class="reference external" href="https://care-sm.readthedocs.io/en/latest/toolkit.html#">CARE-SM Toolkit</a>.</p>
 </li>
 <li><p><strong>Data transformation into RDF</strong></p>
 <p>After the CSV template is curated using the CARE-SM Toolkit, it is fully compatible with the YARRRML template. These templates are then used as inputs to an RDFizer to produce RDF data.</p>
@@ -140,10 +137,12 @@
 <p align="center" ><b>Figure 1: Standalone CARE-SM implementation </b></p>
 <ol class="arabic">
 <li><p><strong>CSV template creation:</strong> First, a CSV data template is created using the CSV template defined by a <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/README.md">data element glossary</a> Rename your CSV file with one of the tagnames defined at the glossary. Eg.: “Diagnosis”, “First_visit” or “Laboratory”.</p></li>
-<li><p><strong>Quality control by CARE-SM Toolkit</strong>: CARE-SM Toolkit will transform all your tagged CSV files e.g.: <code class="docutils literal notranslate"><span class="pre">Diagnosis.csv</span></code> to the curated CSV template called <code class="docutils literal notranslate"><span class="pre">CARE.csv</span></code> (green box from <a class="reference internal" href="#standalone-implementation"><span class="xref myst">Figure 1</span></a>).  This step generates a much richer CSV file that is used by the YARRRML to do the final RDF transformation.</p>
-<p>Jump <a class="reference internal" href="#"><span class="xref myst">here</span></a> to know more in details about <strong>CARE-SM Toolkit</strong> how/why to use it.</p>
+<li><p><strong>Quality control by CARE-SM Toolkit</strong>: CARE-SM Toolkit will transform all your tagged CSV files e.g.: <code class="docutils literal notranslate"><span class="pre">Diagnosis.csv</span></code> to the curated CSV template called <code class="docutils literal notranslate"><span class="pre">CARE.csv</span></code> (green boxes from Figure 1).  This step generates a much richer CSV file that is used by the YARRRML to do the final RDF transformation.</p>
+<p>Jump <a class="reference external" href="https://care-sm.readthedocs.io/en/latest/toolkit.html#why-to-use-it">here</a> to know more in details about <strong>CARE-SM Toolkit</strong> how/why to use it.</p>
 </li>
-<li><p><strong>YARRRML template</strong>: Alongside this standard CSV template, a YARRRML template defines the final RDF shape based on the CARE semantic model. This YARRRML template is provided <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/YARRRML/README.md">here</a> at this repository, so there’s no need for you to create it from scratch. For more information about how we built our YARRRML template, check <a class="reference external" href="https://github.com/pabloalarconm/EMbuilder">EMbuilder YARRRML template builder</a>.</p></li>
+<li><p><strong>YARRRML template</strong>: Alongside this standard CSV template, a YARRRML template defines the final RDF shape based on the CARE semantic model. This YARRRML template is provided <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/YARRRML/README.md">here</a> at this repository, so <strong>there’s no need for you to create it from scratch</strong>.</p>
+<p>In case you’re interested in more information about how we built our YARRRML template, check <a class="reference external" href="https://github.com/pabloalarconm/EMbuilder">EMbuilder YARRRML template builder</a>.</p>
+</li>
 <li><p><strong>Folder distribution:</strong></p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
@@ -157,7 +156,7 @@
 <ol class="arabic simple" start="5">
 <li><p><strong>RDF transformation execution:</strong></p></li>
 </ol>
-<p>You can use Docker compose to run the services (red box from <a class="reference internal" href="#standalone-implementation"><span class="xref myst">Figure 1</span></a>)</p>
+<p>You can use Docker compose to run the services (red box from Figure 1).</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3&quot;</span>
 <span class="nt">services</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">yarrml-rdfizer</span><span class="p">:</span>
@@ -174,11 +173,18 @@
 </div>
 <p>Once this services are running, call in your local browser this link: http://127.0.0.1:4567/CARE. The RDF file should be created at ./data/triples` folder.</p>
 </section>
-<section id="exemplar-data">
-<h2>Exemplar data<a class="headerlink" href="#exemplar-data" title="Link to this heading"></a></h2>
-<p><strong>CSV:</strong> You can also find an exemplar patient data table <strong>before and after</strong> using CARE-SM Toolkit implementation at <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/data/README.md">exemplar_data</a> folder.</p>
-<p><strong>RDF:</strong> You can also find resulting RDF patient data at <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/README.md">RDF</a> folder.</p>
 </section>
+<section id="example-material">
+<h1>Example material<a class="headerlink" href="#example-material" title="Link to this heading"></a></h1>
+<p>Explore practical resources to help you understand and implement the CARE-SM.</p>
+<p><strong>CSV – Patient Data (Before &amp; After)</strong></p>
+<p>Compare patient data representations <strong>before and after</strong> applying the CARE-SM Toolkit:  <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/data/README.md">CSV Data examples</a></p>
+<p><strong>YARRRML Template</strong></p>
+<p>Planning a standalone implementation?  Re-use our YARRRML template to generate RDF from CSV data: <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/blob/main/YARRRML/CARE_yarrrml.yaml">CARE-SM YARRRML Template</a></p>
+<p><strong>RDF – Semantic Representation</strong></p>
+<p>See the final RDF output of patient data modeled using CARE-SM: <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/README.md">RDF Output data examples</a></p>
+<p><strong>SPARQL – Query Examples</strong></p>
+<p>Test and adapt SPARQL queries to explore your CARE-SM-based RDF data: <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/SPARQL">SPARQL Queries folder</a></p>
 </section>
 
 

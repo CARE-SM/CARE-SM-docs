@@ -1,10 +1,10 @@
+# Implementation workflows
 
-# Quick start
+**Quick start**
+
 To jump directly to the "just tell me what I have to do to make this work" using FAIR-in-a-box software, please [follow this link](https://github.com/ejp-rd-vp/FiaB/tree/main/CARE-SM-Fiab).
 
 If you want to understand more deeply what you are doing, read on!
-
-# Implementation workflows
 
 [CARE Semantic Model](https://github.com/CARE-SM/CARE-Semantic-Model) defines a set of clinical data elements used in the healthcare domain of knowledge. However, it doesn't specify a mechanism for bringing these to life. 
 
@@ -23,7 +23,7 @@ This implementation requires two main transformation steps:
 
 1) **Data pre-validation and adaptation**
 
-    After creating this CSV template with the patient data on it, this CSV template needs to be adapted to YARRRML template before performing RDF transformation. This modification add additional fields and automatically make certain translations that reduce the complexity and burden on the data provider. This translation is executed by a component called [CARE-SM Toolkit](#care-sm-toolkit).
+    After creating this CSV template with the patient data on it, this CSV template needs to be adapted to YARRRML template before performing RDF transformation. This modification add additional fields and automatically make certain translations that reduce the complexity and burden on the data provider. This translation is executed by a component called [CARE-SM Toolkit](https://care-sm.readthedocs.io/en/latest/toolkit.html#).
 
 2) **Data transformation into RDF** 
 
@@ -45,11 +45,13 @@ From those who are not interested in using FAIR-in-a-box or interested in explor
 
 1) **CSV template creation:** First, a CSV data template is created using the CSV template defined by a [data element glossary](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/README.md) Rename your CSV file with one of the tagnames defined at the glossary. Eg.: "Diagnosis", "First_visit" or "Laboratory".
 
-2) **Quality control by CARE-SM Toolkit**: CARE-SM Toolkit will transform all your tagged CSV files e.g.: `Diagnosis.csv` to the curated CSV template called `CARE.csv` (green box from [Figure 1](#standalone-implementation)).  This step generates a much richer CSV file that is used by the YARRRML to do the final RDF transformation.
+2) **Quality control by CARE-SM Toolkit**: CARE-SM Toolkit will transform all your tagged CSV files e.g.: `Diagnosis.csv` to the curated CSV template called `CARE.csv` (green boxes from Figure 1).  This step generates a much richer CSV file that is used by the YARRRML to do the final RDF transformation.
 
-    Jump [here]() to know more in details about **CARE-SM Toolkit** how/why to use it.
+    Jump [here](https://care-sm.readthedocs.io/en/latest/toolkit.html#why-to-use-it) to know more in details about **CARE-SM Toolkit** how/why to use it.
 
-3) **YARRRML template**: Alongside this standard CSV template, a YARRRML template defines the final RDF shape based on the CARE semantic model. This YARRRML template is provided [here](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/YARRRML/README.md) at this repository, so there's no need for you to create it from scratch. For more information about how we built our YARRRML template, check [EMbuilder YARRRML template builder](https://github.com/pabloalarconm/EMbuilder).
+3) **YARRRML template**: Alongside this standard CSV template, a YARRRML template defines the final RDF shape based on the CARE semantic model. This YARRRML template is provided [here](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/YARRRML/README.md) at this repository, so **there's no need for you to create it from scratch**.
+
+    In case you're interested in more information about how we built our YARRRML template, check [EMbuilder YARRRML template builder](https://github.com/pabloalarconm/EMbuilder).
 
 4) **Folder distribution:**
 ```bash
@@ -63,7 +65,7 @@ From those who are not interested in using FAIR-in-a-box or interested in explor
 
 5) **RDF transformation execution:**
 
-You can use Docker compose to run the services (red box from [Figure 1](#standalone-implementation))
+You can use Docker compose to run the services (red box from Figure 1).
 
 ```yaml
 version: "3"
@@ -82,8 +84,22 @@ services:
 
 Once this services are running, call in your local browser this link: http://127.0.0.1:4567/CARE. The RDF file should be created at ./data/triples` folder.
 
-## Exemplar data
+# Example material
 
-**CSV:** You can also find an exemplar patient data table **before and after** using CARE-SM Toolkit implementation at [exemplar_data](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/data/README.md) folder.
+Explore practical resources to help you understand and implement the CARE-SM. 
 
-**RDF:** You can also find resulting RDF patient data at [RDF](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/README.md) folder.
+**CSV – Patient Data (Before & After)**
+
+Compare patient data representations **before and after** applying the CARE-SM Toolkit:  [CSV Data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/data/README.md)
+
+**YARRRML Template**
+
+Planning a standalone implementation?  Re-use our YARRRML template to generate RDF from CSV data: [CARE-SM YARRRML Template](https://github.com/CARE-SM/CARE-SM-Implementation/blob/main/YARRRML/CARE_yarrrml.yaml)
+
+**RDF – Semantic Representation**
+
+See the final RDF output of patient data modeled using CARE-SM: [RDF Output data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/README.md)
+
+**SPARQL – Query Examples**
+
+Test and adapt SPARQL queries to explore your CARE-SM-based RDF data: [SPARQL Queries folder](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/SPARQL)

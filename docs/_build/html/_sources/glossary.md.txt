@@ -2,7 +2,7 @@
 
 This guide explains how to structure, populate, and utilize CSV files for patient data in CARE-SM.
 
-## Step-by-Step Guide for CSV template creation.
+## CSV template creation
 
 1. **Create the CSV File**  
    
@@ -70,8 +70,9 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) This column colored is **REQUIRED** for this case.
 
 Here you can find the list of data elements and the columns required to be defined. Those that are optional, feel free to add them. If not, leave them empty.
+<hr>
 
-(birthdate)=
+(birthdate_glossary)=
 ### Birthdate
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -94,8 +95,9 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/808080/808080.png) **age**:
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
+<hr>
 
-(birthyear)=
+(birthyear_glossary)=
 ### Birthyear
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -118,8 +120,9 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/808080/808080.png) **age**: 
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
+<hr>
 
-(deathdate)=
+(deathdate_glossary)=
 ### Deathdate
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Deathdate
@@ -140,30 +143,9 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: Besides its named as "Deathdate", accepts "Age of Death" using this `age` column. Patient age when this observation was taken, this age information can be both an addition or an alternative for `value`/`startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(first-visit)=
-### First Confirmed Visit
-
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: First_visit
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **value**: ISO 8601 formatted date of first confirmed visit (not date time). Its required to add at least one the following: `value` and/or `age` column (preferably `value`)
-- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**:
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
-- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
-- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
-- ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**:
-- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
-- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation, could be the same of the `value`
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `value`/`startdate`/`enddate` information. It's required to add at least one the following: `value` and/or `age` column (preferably `value`). Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
-
-(sex)=
+(sex_glossary)=
 ### Sex
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -190,8 +172,55 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/808080/808080.png) **age**:
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(status)=
+(education_glossary)=
+### Education
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Education
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: International Standard Classification of Education score. E.g. 7
+- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**:
+- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
+- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
+- ![](https://placehold.co/15x15/808080/808080.png) **unit**: 
+- ![](https://placehold.co/15x15/808080/808080.png) **input**:
+- ![](https://placehold.co/15x15/808080/808080.png) **target**: 
+- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
+- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
+
+(first-visit_glossary)=
+### First Confirmed Visit
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: First_visit
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **value**: ISO 8601 formatted date of first confirmed visit (not date time). Its required to add at least one the following: `value` and/or `age` column (preferably `value`)
+- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**:
+- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
+- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
+- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
+- ![](https://placehold.co/15x15/808080/808080.png) **input**:
+- ![](https://placehold.co/15x15/808080/808080.png) **target**:
+- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
+- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation, could be the same of the `value`
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `value`/`startdate`/`enddate` information. It's required to add at least one the following: `value` and/or `age` column (preferably `value`). Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
+
+(status_glossary)=
 ### Participation status
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Status
@@ -216,19 +245,22 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
+<hr>
 
-(education)=
-### Education
+(symptoms_onset_glossary)=
+### Symptoms onset
 
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Education
+**This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Symptoms_onset
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: International Standard Classification of Education score. E.g. 7
-- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**:
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: age or date of symptoms occurrence (Do not confuse with `startdate`/`enddate`/`age` for defining when this observation was registered).
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column.`xsd:date` for date or `xsd:integer` for age. (xsd:float is not included as an option because fractional ages are not accepted by CARE-SM Toolkit).
 - ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
 - ![](https://placehold.co/15x15/808080/808080.png) **activity**:
 - ![](https://placehold.co/15x15/808080/808080.png) **unit**: 
 - ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**: 
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **target**: URI based ontological term that defines symptom/phenotype measured, in case of any. E.g. HP ontological term for the symptom.
 - ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
 - ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
 - ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
@@ -238,32 +270,9 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(phenotype)=
-### Phenotype
-
-**This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
-
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Phenotype
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/808080/808080.png) **value**:
-- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**: 
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: IRI that defines clinical phenotypic symptom or sign: For example Human Phenotype ontology (HPO) term represented with a full URL such as http://purl.obolibrary.org/obo/HP_0001251
-- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
-- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
-- ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**:
-- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
-- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
-
-(diagnosis)=
+(diagnosis_glossary)=
 ### Diagnosis
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
@@ -286,44 +295,33 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(genotype)=
-### Genotype
+(phenotype_glossary)=
+### Phenotype
 
 **This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
 
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Genetic
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Phenotype
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Lexical Annonatation code for the genetic variant. E.g. NM-004006.2:c.4375C>T p.(Arg1459*)
-- ![](https://placehold.co/15x15/808080/808080.png)  **value_datatype**:
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: Genetic variant code constructed by appending the HGNC/OMIM/HGVS annotation, e.g. https://www.ncbi.nlm.nih.gov/clinvar/RCV000008537
-- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **activity**: Specific method in form of an ontological class that describe the process, e.g. NCIT:Microarray Analysis: http://purl.obolibrary.org/obo/NCIT_C18477
-- ![](https://placehold.co/15x15/808080/808080.png)  **unit**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **input**: Anatomical structure where the sample was extracted. Recommended a child of NCIT:Biospecimen or NCIT:Anatomic Structure, System, or Substance, e.g. NCIT:Blood Sample: http://purl.obolibrary.org/obo/NCIT_C17610
-- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **target**: Zygosity associated with this particular genetic variant. Defined by GENO OBO Foundry ontology: One of the following:
-
-    * [GENO:hemizygosity](http://purl.obolibrary.org/obo/GENO_0000134)
-    * [GENO:heterozygosity](http://purl.obolibrary.org/obo/GENO_0000135)
-    * [GENO:homozygosity](http://purl.obolibrary.org/obo/GENO_0000136)
-    * [GENO:nullizygosity](http://purl.obolibrary.org/obo/GENO_0000978)
-    * [GENO:compound heterozygosity](http://purl.obolibrary.org/obo/GENO_0000402)
-
-- ![](https://placehold.co/15x15/808080/808080.png)  **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png)  **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png)  **frequency_value**:
-- ![](https://placehold.co/15x15/1589F0/1589F0.png)  **agent**: Molecular target type, refering to the level of molecular dogma central studied by the genetic variant. Some of the examples terminology from NCIT:
-    * [NCIT:Gene](http://purl.obolibrary.org/obo/NCIT_C16612)
-    * [NCIT:Gene Variant](http://purl.obolibrary.org/obo/NCIT_C97927)
-    * [NCIT:Protein](http://purl.obolibrary.org/obo/NCIT_C17021)
-    * [NCIT:Messenger RNA](http://purl.obolibrary.org/obo/NCIT_C813)
-    * [NCIT:Transfer RNA](http://purl.obolibrary.org/obo/NCIT_C816)
-    * [NCIT:Mitochondrial RNA](http://purl.obolibrary.org/obo/NCIT_C25975)
-
+- ![](https://placehold.co/15x15/808080/808080.png) **value**:
+- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**: 
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: IRI that defines clinical phenotypic symptom or sign: For example Human Phenotype ontology (HPO) term represented with a full URL such as http://purl.obolibrary.org/obo/HP_0001251
+- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
+- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
+- ![](https://placehold.co/15x15/808080/808080.png) **input**:
+- ![](https://placehold.co/15x15/808080/808080.png) **target**:
+- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
+- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
+
 <!-- 
 
 
@@ -368,100 +366,11 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
 -->
 
-(biobank)=
-### Biobank
-
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Biobank
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: sample identifier
-- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**: 
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**: 
-- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
-- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **input**: tissue/sample collected during the sampling process. E.g. Cerebrospinal Fluid http://purl.obolibrary.org/obo/NCIT_C12692
-- ![](https://placehold.co/15x15/808080/808080.png) **target**:
-- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **agent**: biobank Identifier, e.g. https://directory.bbmri-eric.eu/biobankid
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
-
-(symptoms_onset)=
-### Symptoms onset
-
-**This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
-
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Symptoms_onset
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: age or date of symptoms occurrence (Do not confuse with `startdate`/`enddate`/`age` for defining when this observation was registered).
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column.`xsd:date` for date or `xsd:integer` for age. (xsd:float is not included as an option because fractional ages are not accepted by CARE-SM Toolkit).
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
-- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
-- ![](https://placehold.co/15x15/808080/808080.png) **unit**: 
-- ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **target**: URI based ontological term that defines symptom/phenotype measured, in case of any. E.g. HP ontological term for the symptom.
-- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
-- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
-
-(disability)=
-### Disability
-
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Disability
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Score/value of the test output.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column type, e.g. `xsd:float` por a decimal score.
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **activity**: URL that defines the specific clinical questionnaire. Some examples are presented. E.g. http://purl.obolibrary.org/obo/NCIT_C107391  for Edmonton symptom disability assessment .
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **unit**: score/ value unit of measurement.
-- ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**:
-- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
-- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
-
-(questionnaire)=
-### Questionnaire
-
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Questionnaire
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Score/value of the test output.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column type, e.g. `xsd:float` por a decimal score.
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **activity**: URL that defines the specific clinical question defined in the questionnaire or PROM.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **unit**: score/ value unit of measurement.
-- ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**: 
-- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
-- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
-- ![](https://placehold.co/15x15/808080/808080.png) **startdate**: ISO 8601 formatted start date of observation
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
-
-(corporal)=
+(corporal_glossary)=
 ### Corporal
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Corporal
@@ -485,8 +394,9 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(laboratory)=
+(laboratory_glossary)=
 ### Laboratory
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Laboratory
@@ -507,8 +417,9 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(imaging)=
+(imaging_glossary)=
 ### Medical imaging
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Imaging
@@ -529,8 +440,94 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(medication)=
+(genotype_glossary)=
+### Genotype
+
+**This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click [here](https://github.com/CARE-SM/beaconAPI4CARESM)**
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Genetic
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Lexical Annonatation code for the genetic variant. E.g. NM-004006.2:c.4375C>T p.(Arg1459*)
+- ![](https://placehold.co/15x15/808080/808080.png)  **value_datatype**:
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: Genetic variant code constructed by appending the HGNC/OMIM/HGVS annotation, e.g. https://www.ncbi.nlm.nih.gov/clinvar/RCV000008537
+- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **activity**: Specific method in form of an ontological class that describe the process, e.g. NCIT:Microarray Analysis: http://purl.obolibrary.org/obo/NCIT_C18477
+- ![](https://placehold.co/15x15/808080/808080.png)  **unit**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **input**: Anatomical structure where the sample was extracted. Recommended a child of NCIT:Biospecimen or NCIT:Anatomic Structure, System, or Substance, e.g. NCIT:Blood Sample: http://purl.obolibrary.org/obo/NCIT_C17610
+- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **target**: Zygosity associated with this particular genetic variant. Defined by GENO OBO Foundry ontology: One of the following:
+
+    * [GENO:hemizygosity](http://purl.obolibrary.org/obo/GENO_0000134)
+    * [GENO:heterozygosity](http://purl.obolibrary.org/obo/GENO_0000135)
+    * [GENO:homozygosity](http://purl.obolibrary.org/obo/GENO_0000136)
+    * [GENO:nullizygosity](http://purl.obolibrary.org/obo/GENO_0000978)
+    * [GENO:compound heterozygosity](http://purl.obolibrary.org/obo/GENO_0000402)
+
+- ![](https://placehold.co/15x15/808080/808080.png)  **protocol_id**:
+- ![](https://placehold.co/15x15/808080/808080.png)  **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png)  **frequency_value**:
+- ![](https://placehold.co/15x15/1589F0/1589F0.png)  **agent**: Molecular target type, refering to the level of molecular dogma central studied by the genetic variant. Some of the examples terminology from NCIT:
+    * [NCIT:Gene](http://purl.obolibrary.org/obo/NCIT_C16612)
+    * [NCIT:Gene Variant](http://purl.obolibrary.org/obo/NCIT_C97927)
+    * [NCIT:Protein](http://purl.obolibrary.org/obo/NCIT_C17021)
+    * [NCIT:Messenger RNA](http://purl.obolibrary.org/obo/NCIT_C813)
+    * [NCIT:Transfer RNA](http://purl.obolibrary.org/obo/NCIT_C816)
+    * [NCIT:Mitochondrial RNA](http://purl.obolibrary.org/obo/NCIT_C25975)
+
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
+
+(questionnaire_glossary)=
+### Questionnaire
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Questionnaire
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Score/value of the test output.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column type, e.g. `xsd:float` por a decimal score.
+- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **activity**: URL that defines the specific clinical question defined in the questionnaire or PROM.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **unit**: score/ value unit of measurement.
+- ![](https://placehold.co/15x15/808080/808080.png) **input**:
+- ![](https://placehold.co/15x15/808080/808080.png) **target**: 
+- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
+- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
+- ![](https://placehold.co/15x15/808080/808080.png) **startdate**: ISO 8601 formatted start date of observation
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of this data elements under the same visit occurrence event.
+<hr>
+
+(disability_glossary)=
+### Disability
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Disability
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Score/value of the test output.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column type, e.g. `xsd:float` por a decimal score.
+- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **activity**: URL that defines the specific clinical questionnaire. Some examples are presented. E.g. http://purl.obolibrary.org/obo/NCIT_C107391  for Edmonton symptom disability assessment .
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **unit**: score/ value unit of measurement.
+- ![](https://placehold.co/15x15/808080/808080.png) **input**:
+- ![](https://placehold.co/15x15/808080/808080.png) **target**:
+- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
+- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
+
+(medication_glossary)=
 ### Medication
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Medication
@@ -551,8 +548,9 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(surgery)=
+(surgery_glossary)=
 ### Surgery
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Surgery
@@ -573,8 +571,33 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `value`/`startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
 
-(clinical_trial)=
+
+(biobank_glossary)=
+### Biobank
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Biobank
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: sample identifier
+- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**: 
+- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**: 
+- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
+- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **input**: tissue/sample collected during the sampling process. E.g. Cerebrospinal Fluid http://purl.obolibrary.org/obo/NCIT_C12692
+- ![](https://placehold.co/15x15/808080/808080.png) **target**:
+- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **agent**: biobank Identifier, e.g. https://directory.bbmri-eric.eu/biobankid
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr>
+
+(clinical_trial_glossary)=
 ### Clinical trial
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Clinical_trial
