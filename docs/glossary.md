@@ -281,7 +281,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png)  **value**: Human readable label of the diagnosed condition.
 - ![](https://placehold.co/15x15/808080/808080.png)  **value_datatype**: 
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: IRI that defines clinical condition as disease or disorder: Orphanet disease ontology (ORDO) represented with a full URL such as http://www.orpha.net/ORDO/Orphanet_199630
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: Full IRI that defines clinical condition as disease or disorder: Orphanet disease ontology (ORDO), such as http://www.orpha.net/ORDO/Orphanet_199630. **NOTE:** For confirmed undiagnosed cases, please use: ORDO:Orphanet_616874 (full IRI)
 - ![](https://placehold.co/15x15/808080/808080.png)  **activity**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **unit**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **input**:
