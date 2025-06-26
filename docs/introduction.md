@@ -6,7 +6,7 @@
 <p align="center"><b>Take CARE of your data! FAIRly!</b></p>
 <hr>
 
-CARE-SM is a more robust and matured representation of its precursor, the Common Data Element (CDE) semantic data model. The primary objective of its creation was to develop a semantic data model capable of representing [a set of common data elements for rare diseases registration](https://eu-rd-platform.jrc.ec.europa.eu/sites/default/files/CDS/EU_RD_Platform_CDS_Final.pdf) recommended by the European Commission Joint Research Centre. CARE-SM stands as the matured iteration of this CDE semantic model, extending its capabilities to encompass the representation of all data elements pertinent to patient registries and clinical encounters.
+Clinical And Registry Entries (CARE-SM) is a semantic data model designed to represent healthcare patient information by using knowledge graphs in the Resource Description Framework (RDF). This documentation aims to provide a comprehensive overview of CARE-SM, its origins, and the foundamental design principles that underlie its structure.
 
 CARE-SM is built upon the [Semanticscience Integrated Ontology (SIO)](https://doi.org/10.1186/2041-1480-5-14) as its core structural schema. SIO is used to define every concept within the data model, utilizing upper-class classes and properties. This knowledge graph serves as a "scaffold" that holds every data element within its structure. By a combination of these instances defined by SIO, it becomes possible to represent every clinical entry comprehensively.
 
@@ -24,24 +24,38 @@ CARE-SM is built upon the [Semanticscience Integrated Ontology (SIO)](https://do
 
 Moreover, each instance within CARE-SM is associated with a domain-specific ontological class from the [OBO Foundry](http://obofoundry.org/). For instance, the representation of patient birthdate is described at an upper-class level using the ontological term [SIO:attribute](http://semanticscience.org/resource/SIO_000614) and, at a domain-specific level, as [ncit:Birthdate](http://purl.obolibrary.org/obo/NCIT_C68615). This dual ontological characterization enhances data interoperability and precise semantic descriptions.
 
-<p align="center"> 
-  <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png"> 
-<p align="center" ><b>Figure 1: Core structure </b></p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png">
+    </a>
+    <b>Figure 1: Core structure </b></p>
+
+</p>
 
 
-## Contextual Layer
+## Longitudinal records
 
-To maintain a common core structure using CARE-SM, only one data element is modeled at a time. For that reason, if you do not have that element, you do not use that particular data representation. This could lead to situations where data is not aggregated enough. To address this, a layer of metadata has been created around every data element representation (see Figure 2).
+To maintain a consistent core structure using CARE-SM, only one data element is modeled at a time. To support individual modeling, a metadata layer has been created around each data element representation (see Figure 2).
 
-This metadata describes the context of the data represented in the core structure model, giving some temporal information to each data element. This structure is preserved even when date/time are the core observation of the model (e.g., date of symptom onset). The context layer creates a timeline of events around every data element, allowing the model to represent not only individual patient registry entries but also patient clinical encounters in a precise way.
+This metadata describes the context of each data element. The structure is preserved even when the primary objective of the data element is date/time information (e.g., symptom onset date or birthdate). This metadata layer connects all patient medical records in the form of a timeline, enabling the model to represent not only individual patient registry entries but also clinical encounters in a precise manner.
 
-In addition to the patient's timeline and temporal information, common context can be grouped into other arbitrary data elements by connecting them through event nodes. This event has a common context between data elements for cases where multiple data elements share a unique relationship (like conditions/treatment scenarios, visit-based aggregated information). It's not mandatory to implement this in your model, but it is made possible by the design.
+In addition to the patient timeline and temporal information, related records can be grouped under the same visit or event occurrence by connecting them through event nodes. These events provide a shared context among data elements, particularly in cases where multiple elements are related (e.g., condition/treatment scenarios or visit-based aggregated information). While the use of event nodes is optional, the model design fully supports this capability.
 
-This metadata requires the combination of RDF-Quads and RDF-Triples, rather than only RDF Triples used for regular knowledge graphs. The core structure of the model is represented using RDF-Quad, containing as a fourth element (Quad) the same context ID URL. This URL is used as the subject for other RDF Triples that define the metadata layer (see Figure 2).
+The metadata layer is implemented using named graphs, encapsulating each complete record within a dedicated named graph, as illustrated in Figures 2 and 3. The use of named graphs enhances query efficiency. By combining a common pattern across all data elements with the computational benefits of using both RDF-Quads and RDF-Triples, the model enables more efficient querying and retrieval of patient data using standardized query patterns.
 
-<p align="center"> 
-  <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png"> 
-<p align="center" ><b>Figure 2: Context representation </b></p>
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png">
+    </a>
+    <b>Figure 2: Longitudinal record representation </b></p>
+</p>
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Timeline.png">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Timeline.png">
+    </a>
+    <b>Figure 3: Timeline of a patient medical history </b></p>
+</p>
 
 **List of Data Elements**
 
