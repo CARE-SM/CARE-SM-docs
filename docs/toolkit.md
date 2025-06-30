@@ -30,9 +30,16 @@ The toolkit serves as a module dedicated to performing a curation step prior to 
 
 There's a Docker-based implementation controlled via API (using FastAPI) that you can use for mounting this data transformation step as a part of your CARE-SM implementation.
 
-You can edit the [docker-compose.yaml](https://github.com/CARE-SM/CARE-SM-Toolkit/blob/main/docker-compose.yaml) to control the volume folder in order to pass your CSV-based patient data:
+You can edit the [docker-compose.yaml](https://github.com/CARE-SM/CARE-SM-Toolkit/blob/main/toolkit/API/docker-compose.yaml) to control the volume folder in order to pass your CSV-based patient data:
 
-```
+```yaml
+version: "3.8"
+
+services:
+  api:
+    image: pabloalarconm/care-sm-toolkit:0.1.9
+    ports:
+      - "8000:8000"
     volumes:
       - ./location/of/your/data:/code/data
 ```
