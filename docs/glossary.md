@@ -285,7 +285,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/808080/808080.png)  **activity**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **unit**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **input**:
-- ![](https://placehold.co/15x15/808080/808080.png)  **target**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **target**: Full IRI used to describe the anatomic region where the diagnosis was discovered or to which it is associated. E.g., http://purl.obolibrary.org/obo/NCIT_C105633 (Left Arm)
 - ![](https://placehold.co/15x15/808080/808080.png)  **protocol_id**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **frequency_type**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **frequency_value**:
@@ -310,7 +310,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/808080/808080.png) **activity**:
 - ![](https://placehold.co/15x15/808080/808080.png) **unit**:
 - ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **target**: Full IRI used to describe the anatomic region where the observation was discovered or to which it is associated. E.g., http://purl.obolibrary.org/obo/NCIT_C105633 (Left Arm)
 - ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
 - ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
 - ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
