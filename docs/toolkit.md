@@ -52,12 +52,12 @@ Run [docker compose](https://docs.docker.com/compose/) to start the containers:
  docker compose up -d
 ```
 
-Once its running, you can use in your browser the OpenAPI documentation at http://localhost:8080/docs so inspect all the possible requests and trigger the execution
+Once its running, you can use in your browser the OpenAPI documentation at http://localhost:8000/docs so inspect all the possible requests and trigger the execution
 
 Alternatively, you trigger the data transformation in the terminal by the following:
 
 ```
-curl -X POST http://localhost:8080/toolkit
+curl -X POST http://localhost:8000/toolkit
 ```
  
 **Congrats!** You will find your transformed data, stored as `CARE.csv` at the folder you defined as volume below.

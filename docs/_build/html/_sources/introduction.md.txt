@@ -64,7 +64,6 @@ The metadata layer is implemented using named graphs, encapsulating each complet
   - [Birthyear](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthyear)
   - [Deathdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#deathdate)
   - [Sex](https://care-sm.readthedocs.io/en/latest/data_elements.html#sex)
-  - [Education level](https://care-sm.readthedocs.io/en/latest/data_elements.html#education-level)
 
 - **Participation and timeline:**
   - [First confirmed visit](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthdate)

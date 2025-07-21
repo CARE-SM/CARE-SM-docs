@@ -174,7 +174,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 <hr>
 
-(education_glossary)=
+<!-- (education_glossary)=
 ### Education
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Education
@@ -195,7 +195,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
-<hr>
+<hr> -->
 
 (first-visit_glossary)=
 ### First Confirmed Visit
@@ -281,11 +281,11 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png)  **value**: Human readable label of the diagnosed condition.
 - ![](https://placehold.co/15x15/808080/808080.png)  **value_datatype**: 
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: IRI that defines clinical condition as disease or disorder: Orphanet disease ontology (ORDO) represented with a full URL such as http://www.orpha.net/ORDO/Orphanet_199630
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: Full IRI that defines clinical condition as disease or disorder: Orphanet disease ontology (ORDO), such as http://www.orpha.net/ORDO/Orphanet_199630. **NOTE:** For confirmed undiagnosed cases, please use: ORDO:Orphanet_616874 (full IRI)
 - ![](https://placehold.co/15x15/808080/808080.png)  **activity**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **unit**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **input**:
-- ![](https://placehold.co/15x15/808080/808080.png)  **target**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **target**: Full IRI used to describe the anatomic region where the diagnosis was discovered or to which it is associated. E.g., http://purl.obolibrary.org/obo/NCIT_C105633 (Left Arm)
 - ![](https://placehold.co/15x15/808080/808080.png)  **protocol_id**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **frequency_type**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **frequency_value**:
@@ -310,7 +310,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/808080/808080.png) **activity**:
 - ![](https://placehold.co/15x15/808080/808080.png) **unit**:
 - ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **target**: Full IRI used to describe the anatomic region where the observation was discovered or to which it is associated. E.g., http://purl.obolibrary.org/obo/NCIT_C105633 (Left Arm)
 - ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
 - ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
 - ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:

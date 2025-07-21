@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CARE-SM Toolkit &mdash; CARE Semantic Model  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f03e79db" />
 
@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="CARE-SM CSV Glossasy Documentation" href="glossary.html" />
-    <link rel="prev" title="Quick start" href="implementation.html" /> 
+    <link rel="prev" title="Implementation workflows" href="implementation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -61,8 +61,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Implementation Guide</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="implementation.html">Quick start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="implementation.html#implementation-workflows">Implementation workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html">Implementation workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implementation.html#example-material">Example material</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">CARE-SM Toolkit</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#why-to-use-it">Why to use it?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
@@ -132,9 +132,16 @@
 <section id="docker">
 <h2>Docker<a class="headerlink" href="#docker" title="Link to this heading"></a></h2>
 <p>There’s a Docker-based implementation controlled via API (using FastAPI) that you can use for mounting this data transformation step as a part of your CARE-SM implementation.</p>
-<p>You can edit the <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Toolkit/blob/main/docker-compose.yaml">docker-compose.yaml</a> to control the volume folder in order to pass your CSV-based patient data:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">volumes</span><span class="p">:</span>
-      <span class="o">-</span> <span class="o">./</span><span class="n">location</span><span class="o">/</span><span class="n">of</span><span class="o">/</span><span class="n">your</span><span class="o">/</span><span class="n">data</span><span class="p">:</span><span class="o">/</span><span class="n">code</span><span class="o">/</span><span class="n">data</span>
+<p>You can edit the <a class="reference external" href="https://github.com/CARE-SM/CARE-SM-Toolkit/blob/main/toolkit/API/docker-compose.yaml">docker-compose.yaml</a> to control the volume folder in order to pass your CSV-based patient data:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;3.8&quot;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">api</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pabloalarconm/care-sm-toolkit:0.1.10</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8000:8000&quot;</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./location/of/your/data:/code/data</span>
 </pre></div>
 </div>
 <p><strong>Note</strong> IP and Port can be customized in the docker compose as well.</p>
@@ -142,9 +149,9 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">docker</span> <span class="n">compose</span> <span class="n">up</span> <span class="o">-</span><span class="n">d</span>
 </pre></div>
 </div>
-<p>Once its running, you can use in your browser the OpenAPI documentation at http://localhost:8080/docs so inspect all the possible requests and trigger the execution</p>
+<p>Once its running, you can use in your browser the OpenAPI documentation at http://localhost:8000/docs so inspect all the possible requests and trigger the execution</p>
 <p>Alternatively, you trigger the data transformation in the terminal by the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">POST</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8080</span><span class="o">/</span><span class="n">toolkit</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">POST</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8000</span><span class="o">/</span><span class="n">toolkit</span>
 </pre></div>
 </div>
 <p><strong>Congrats!</strong> You will find your transformed data, stored as <code class="docutils literal notranslate"><span class="pre">CARE.csv</span></code> at the folder you defined as volume below.</p>
@@ -185,7 +192,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="implementation.html" class="btn btn-neutral float-left" title="Quick start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="implementation.html" class="btn btn-neutral float-left" title="Implementation workflows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="glossary.html" class="btn btn-neutral float-right" title="CARE-SM CSV Glossasy Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

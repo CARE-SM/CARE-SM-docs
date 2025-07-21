@@ -98,8 +98,10 @@ Planning a standalone implementation?  Re-use our YARRRML template to generate R
 
 **RDF – Semantic Representation**
 
-See the final RDF output of patient data modeled using CARE-SM: [RDF Output data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/README.md)
+See the final RDF output of patient data modeled using CARE-SM: [RDF output data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/README.md)
 
-**SPARQL – Query Examples**
+**SPARQL – Query Examples and Validation**
 
-Test and adapt SPARQL queries to explore your CARE-SM-based RDF data: [SPARQL Queries folder](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/SPARQL)
+Test and adapt SPARQL queries to explore your CARE-SM-based RDF data: [SPARQL queries folder](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/SPARQL)
+
+We use SPARQL also for data validation. RDF-Quads is not well-managed with **ShEx** or **SHACL**. For this particular case, we propose SPARQL queries for this aspect. You can find them [here](https://github.com/CARE-SM/CARE-Semantic-Model/tree/main/schema).
