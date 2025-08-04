@@ -62,7 +62,9 @@ The metadata layer is implemented using named graphs, encapsulating each complet
 - **Demographics:**
   - [Birthdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthdate)
   - [Birthyear](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthyear)
+  - [Country at birth](https://care-sm.readthedocs.io/en/latest/data_elements.html#country)
   - [Deathdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#deathdate)
+  - [Cause of death](https://care-sm.readthedocs.io/en/latest/data_elements.html#cause-of-death)
   - [Sex](https://care-sm.readthedocs.io/en/latest/data_elements.html#sex)
 
 - **Participation and timeline:**
@@ -73,15 +75,18 @@ The metadata layer is implemented using named graphs, encapsulating each complet
 - **Conditions and findings:**
   - [Diagnosis](https://care-sm.readthedocs.io/en/latest/data_elements.html#diagnosis)
   - [Phenotype](https://care-sm.readthedocs.io/en/latest/data_elements.html#phenotype)
+  - [Examination](https://care-sm.readthedocs.io/en/latest/data_elements.html#examination)
 
 - **Clinical measurements:**
-  - [Corporal measurement](https://care-sm.readthedocs.io/en/latest/data_elements.html#corporal-measurements)
+  <!-- - [Corporal measurement](https://care-sm.readthedocs.io/en/latest/data_elements.html#corporal-measurements) -->
   - [Laboratory measurement](https://care-sm.readthedocs.io/en/latest/data_elements.html#laboratory-measurement)
-  - [Medical imaging](https://care-sm.readthedocs.io/en/latest/data_elements.html#medical-imaging)
+  <!-- - [Medical imaging](https://care-sm.readthedocs.io/en/latest/data_elements.html#medical-imaging) -->
   - [Genetic testing](https://care-sm.readthedocs.io/en/latest/data_elements.html#genetic-testing)
 
 - **Treatments and interventions:**
+  - [Prescription](https://care-sm.readthedocs.io/en/latest/data_elements.html#prescription)
   - [Medication](https://care-sm.readthedocs.io/en/latest/data_elements.html#medication)
+  - [Hospitalization](https://care-sm.readthedocs.io/en/latest/data_elements.html#hospitalization)
   - [Surgery](https://care-sm.readthedocs.io/en/latest/data_elements.html#surgical-intervention)
 
 - **Patient-reported outcomes:**

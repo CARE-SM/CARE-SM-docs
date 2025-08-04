@@ -59,6 +59,7 @@
 <li class="toctree-l1"><a class="reference internal" href="data_elements.html#patient-reported-outcomes">Patient-reported outcomes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_elements.html#treatments-and-interventions">Treatments and interventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_elements.html#research">Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_elements.html#list-of-ontological-terms-used">List of ontological terms used</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Implementation Guide</span></p>
 <ul class="current">
@@ -70,20 +71,23 @@
 <li class="toctree-l2"><a class="reference internal" href="#data-element-glossary">Data Element Glossary</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#birthdate">Birthdate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#birthyear">Birthyear</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#country-at-birth">Country at birth</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#deathdate">Deathdate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cause-of-death">Cause of death</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sex">Sex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#first-confirmed-visit">First Confirmed Visit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#participation-status">Participation status</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#symptoms-onset">Symptoms onset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#diagnosis">Diagnosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examination">Examination</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#phenotype">Phenotype</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#corporal">Corporal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diagnosis">Diagnosis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#laboratory">Laboratory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#medical-imaging">Medical imaging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#genotype">Genotype</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#genetic">Genetic</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#questionnaire">Questionnaire</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#disability">Disability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prescription">Prescription</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#medication">Medication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hospitalization">Hospitalization</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#surgery">Surgery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#biobank">Biobank</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#clinical-trial">Clinical trial</a></li>
@@ -245,6 +249,31 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 </ul>
 <hr>
 </section>
+<section id="country-at-birth">
+<span id="country-glossary"></span><h3>Country at birth<a class="headerlink" href="#country-at-birth" title="Link to this heading"></a></h3>
+<p><strong>This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click <a class="reference external" href="https://github.com/CARE-SM/beaconAPI4CARESM">here</a></strong></p>
+<ul class="simple">
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Country</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in form of a patient identifier.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>value</strong>: human readable label, e.g. Spain</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value_datatype</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>valueIRI</strong>:  Full IRI used as annonation code for the country at birth.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>activity</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>unit</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>protocol_id</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>age</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
+</ul>
+<hr>
+</section>
 <section id="deathdate">
 <span id="deathdate-glossary"></span><h3>Deathdate<a class="headerlink" href="#deathdate" title="Link to this heading"></a></h3>
 <ul class="simple">
@@ -264,6 +293,30 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation, could be the same of the <code class="docutils literal notranslate"><span class="pre">value</span></code></p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Besides its named as “Deathdate”, accepts “Age of Death” using this <code class="docutils literal notranslate"><span class="pre">age</span></code> column. Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">value</span></code>/<code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
+</ul>
+<hr>
+</section>
+<section id="cause-of-death">
+<span id="cause-death-glossary"></span><h3>Cause of death<a class="headerlink" href="#cause-of-death" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Cause_death</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>value</strong>: human readable label associated to the cause of death.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value_datatype</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>valueIRI</strong>: Full IRI used as annonation code for the cause of the patient death.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>activity</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>unit</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>protocol_id</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation, could be the same of the <code class="docutils literal notranslate"><span class="pre">value</span></code></p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">value</span></code>/<code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
@@ -341,7 +394,7 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation, could be the same of the <code class="docutils literal notranslate"><span class="pre">value</span></code></p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">value</span></code>/<code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. It’s required to add at least one the following: <code class="docutils literal notranslate"><span class="pre">value</span></code> and/or <code class="docutils literal notranslate"><span class="pre">age</span></code> column (preferably <code class="docutils literal notranslate"><span class="pre">value</span></code>). Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">value</span></code>/<code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. It’s required to add at least one the following: <code class="docutils literal notranslate"><span class="pre">value</span></code> and/or <code class="docutils literal notranslate"><span class="pre">age</span></code> column (preferably <code class="docutils literal notranslate"><span class="pre">value</span></code>). Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
@@ -372,7 +425,7 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of this data elements under the same visit occurrence event.</p></li>
 </ul>
@@ -397,32 +450,38 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
 <hr>
 </section>
-<section id="diagnosis">
-<span id="diagnosis-glossary"></span><h3>Diagnosis<a class="headerlink" href="#diagnosis" title="Link to this heading"></a></h3>
-<p><strong>This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click <a class="reference external" href="https://github.com/CARE-SM/beaconAPI4CARESM">here</a></strong></p>
+<section id="examination">
+<span id="examination-glossary"></span><h3>Examination<a class="headerlink" href="#examination" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Diagnosis</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Examination</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" />  <strong>value</strong>: Human readable label of the diagnosed condition.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>value_datatype</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>valueIRI</strong>: Full IRI that defines clinical condition as disease or disorder: Orphanet disease ontology (ORDO), such as http://www.orpha.net/ORDO/Orphanet_199630. <strong>NOTE:</strong> For confirmed undiagnosed cases, please use: ORDO:Orphanet_616874 (full IRI)</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>activity</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>unit</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>input</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" />  <strong>target</strong>: Full IRI used to describe the anatomic region where the diagnosis was discovered or to which it is associated. E.g., http://purl.obolibrary.org/obo/NCIT_C105633 (Left Arm)</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>protocol_id</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>frequency_type</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>frequency_value</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>agent</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: Resulting value from this examination</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>value_datatype</strong>: XSD datatype that defines <code class="docutils literal notranslate"><span class="pre">value</span></code> column type, e.g. <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> or <code class="docutils literal notranslate"><span class="pre">xsd:integer</span></code> for numerical values. In case of none, <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> will be added by default.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>valueIRI</strong>: Full IRI used for defining the patient attribute/finding examinated, e.g.:</p>
+<ul>
+<li><p><a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C25208">NCIT:Weight</a></p></li>
+<li><p><a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C25347">NCIT:Height</a></p></li>
+<li><p><a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C99524">Left Ventricular Ejection Fraction</a></p></li>
+<li><p><a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C16358">NCIT:Body Mass Index</a></p></li>
+</ul>
+</li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>activity</strong>: Full IRI used for pecific method activity.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>unit</strong>: child of UO:unit http://purl.obolibrary.org/obo/UO_0000000</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>target</strong>: Full IRI used for annonatating the anatomic structure examinated.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>protocol_id</strong>: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/hplc-sample-prep-4r3l25ew4l1y/v1</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
@@ -447,13 +506,37 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
+</ul>
+<hr>
+</section>
+<section id="diagnosis">
+<span id="diagnosis-glossary"></span><h3>Diagnosis<a class="headerlink" href="#diagnosis" title="Link to this heading"></a></h3>
+<p><strong>This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click <a class="reference external" href="https://github.com/CARE-SM/beaconAPI4CARESM">here</a></strong></p>
+<ul class="simple">
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Diagnosis</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" />  <strong>value</strong>: Human readable label of the diagnosed condition.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>value_datatype</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>valueIRI</strong>: Full IRI that defines clinical condition as disease or disorder: Orphanet disease ontology (ORDO), such as http://www.orpha.net/ORDO/Orphanet_199630. <strong>NOTE:</strong> For confirmed undiagnosed cases, please use: ORDO:Orphanet_616874 (full IRI)</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>activity</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>unit</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>input</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" />  <strong>target</strong>: Full IRI used to describe the anatomic region where the diagnosis was discovered or to which it is associated. E.g., http://purl.obolibrary.org/obo/NCIT_C105633 (Left Arm)</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>protocol_id</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>frequency_type</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>frequency_value</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" />  <strong>agent</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
 <hr>
 <!-- 
-
 
 ## Consent for being contacted for research:
 
@@ -500,36 +583,6 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 
 -->
 </section>
-<section id="corporal">
-<span id="corporal-glossary"></span><h3>Corporal<a class="headerlink" href="#corporal" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Corporal</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: resulting value from this observation</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>value_datatype</strong>: XSD datatype that defines <code class="docutils literal notranslate"><span class="pre">value</span></code> column type, e.g. <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> or <code class="docutils literal notranslate"><span class="pre">xsd:integer</span></code> for numerical values. In case of none, <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> will be added by default.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>valueIRI</strong>: child of <a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C19332">NCIT:Personal Attribute</a>, for instance:</p>
-<ul>
-<li><p><a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C25208">NCIT:Weight</a></p></li>
-<li><p><a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C25347">NCIT:Height</a></p></li>
-<li><p><a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C16358">NCIT:Body Mass Index</a></p></li>
-</ul>
-</li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>activity</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>unit</strong>: child of UO:unit http://purl.obolibrary.org/obo/UO_0000000</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>protocol_id</strong>: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/hplc-sample-prep-4r3l25ew4l1y/v1</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
-</ul>
-<hr>
-</section>
 <section id="laboratory">
 <span id="laboratory-glossary"></span><h3>Laboratory<a class="headerlink" href="#laboratory" title="Link to this heading"></a></h3>
 <ul class="simple">
@@ -553,33 +606,31 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
 <hr>
+<!-- (imaging_glossary)=
+### Medical imaging
+
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Imaging
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
+- ![](https://placehold.co/15x15/808080/808080.png) **value**: 
+- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**: 
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: medical imagine GUID of the file (must be a GUID system compatible with RDF Resource identifiers)
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **activity**: child of Imaging technique http://purl.obolibrary.org/obo/NCIT_C17369  (e.g. obo:Digital X-Ray http://purl.obolibrary.org/obo/NCIT_C18001)
+- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
+- ![](https://placehold.co/15x15/808080/808080.png) **input**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **target**: child of Anatomic Structure, System, or Substance http://purl.obolibrary.org/obo/NCIT_C12219 (e.g. obo:Palmar Region http://purl.obolibrary.org/obo/NCIT_C33252)
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **protocol_id**: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/anatomical-variations-and-dimensions-of-the-poplit-3byl4qqk8vo5
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
+- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
+- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: patient age when this observation was taken, this age information can be both an addition or an alternative for `startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
+<hr> -->
 </section>
-<section id="medical-imaging">
-<span id="imaging-glossary"></span><h3>Medical imaging<a class="headerlink" href="#medical-imaging" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Imaging</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value_datatype</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>valueIRI</strong>: medical imagine GUID of the file (must be a GUID system compatible with RDF Resource identifiers)</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: child of Imaging technique http://purl.obolibrary.org/obo/NCIT_C17369  (e.g. obo:Digital X-Ray http://purl.obolibrary.org/obo/NCIT_C18001)</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>unit</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>target</strong>: child of Anatomic Structure, System, or Substance http://purl.obolibrary.org/obo/NCIT_C12219 (e.g. obo:Palmar Region http://purl.obolibrary.org/obo/NCIT_C33252)</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>protocol_id</strong>: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/anatomical-variations-and-dimensions-of-the-poplit-3byl4qqk8vo5</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
-</ul>
-<hr>
-</section>
-<section id="genotype">
-<span id="genotype-glossary"></span><h3>Genotype<a class="headerlink" href="#genotype" title="Link to this heading"></a></h3>
+<section id="genetic">
+<span id="genotype-glossary"></span><h3>Genetic<a class="headerlink" href="#genetic" title="Link to this heading"></a></h3>
 <p><strong>This data element can be queried (for counting anonymized patient information) by Beacon API created for CARE-SM, for more information, click <a class="reference external" href="https://github.com/CARE-SM/beaconAPI4CARESM">here</a></strong></p>
 <ul class="simple">
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Genetic</p></li>
@@ -614,7 +665,7 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 </li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
@@ -625,11 +676,11 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <ul class="simple">
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Questionnaire</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: Score/value of the test output.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: Score/value of the reported outcome.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value_datatype</strong>: XSD datatype that defines <code class="docutils literal notranslate"><span class="pre">value</span></code> column type, e.g. <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> por a decimal score.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>valueIRI</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: URL that defines the specific clinical question defined in the questionnaire or PROM.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>unit</strong>: score/ value unit of measurement.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: Full IRI that defines the specific clinical question defined in the questionnaire or PROM.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>unit</strong>: unit of measurement coming from the reported outcome.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>protocol_id</strong>:</p></li>
@@ -638,7 +689,7 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of this data elements under the same visit occurrence event.</p></li>
 </ul>
@@ -649,17 +700,41 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <ul class="simple">
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Disability</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: Score/value of the test output.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value_datatype</strong>: XSD datatype that defines <code class="docutils literal notranslate"><span class="pre">value</span></code> column type, e.g. <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> por a decimal score.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: Score/value of the assessment.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value_datatype</strong>: XSD datatype that defines <code class="docutils literal notranslate"><span class="pre">value</span></code> column type, e.g. <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> in case of a decimal score.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>valueIRI</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: URL that defines the specific clinical questionnaire. Some examples are presented. E.g. http://purl.obolibrary.org/obo/NCIT_C107391  for Edmonton symptom disability assessment .</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>unit</strong>: score/ value unit of measurement.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: Full IRI that defines the specific clinical assessment. Some examples are presented. E.g. http://purl.obolibrary.org/obo/NCIT_C107391  for Edmonton symptom disability assessment .</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>unit</strong>: unit of measurement coming from the resulting assessment score/value.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>protocol_id</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: Patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
+</ul>
+<hr>
+</section>
+<section id="prescription">
+<span id="prescription-glossary"></span><h3>Prescription<a class="headerlink" href="#prescription" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Prescription</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: dose value prescribed to the patient</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>value_datatype</strong>: XSD datatype that defines <code class="docutils literal notranslate"><span class="pre">value</span></code> column type, e.g. <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> or <code class="docutils literal notranslate"><span class="pre">xsd:integer</span></code> for numerical values.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>valueIRI</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>activity</strong>: child of Route of Administration http://purl.obolibrary.org/obo/NCIT_C38114 (e.g. obo:Sublingual Route of Administration http://purl.obolibrary.org/obo/NCIT_C38300 )</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>unit</strong>: child of UO:unit http://purl.obolibrary.org/obo/UO_0000000</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>protocol_id</strong>: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/hplc-sample-prep-4r3l25ew4l1y/v1</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>frequency_type</strong>: child of obo:Temporal Qualifier http://purl.obolibrary.org/obo/NCIT_C21514 (e.g. obo:Per Day)</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>frequency_value</strong>: frequency value prescribe to the patient</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>agent</strong>: Full IRI used as annotation code for drugs components. (e.g. https://www.whocc.no/atc_ddd_index/?code=A07EA01)</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
@@ -673,20 +748,44 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <ul class="simple">
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Medication</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: dose value prescribed to the patient</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>value</strong>: dose value administered to the patient</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>value_datatype</strong>: XSD datatype that defines <code class="docutils literal notranslate"><span class="pre">value</span></code> column type, e.g. <code class="docutils literal notranslate"><span class="pre">xsd:float</span></code> or <code class="docutils literal notranslate"><span class="pre">xsd:integer</span></code> for numerical values.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>valueIRI</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>activity</strong>: child of Route of Administration http://purl.obolibrary.org/obo/NCIT_C38114 (e.g. obo:Sublingual Route of Administration http://purl.obolibrary.org/obo/NCIT_C38300 )</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>activity</strong>: Full IRI for the route of administration, e.g.,<a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C38300">Sublingual Route of Administration</a></p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>unit</strong>: child of UO:unit http://purl.obolibrary.org/obo/UO_0000000</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>protocol_id</strong>: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/hplc-sample-prep-4r3l25ew4l1y/v1</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>frequency_type</strong>: child of obo:Temporal Qualifier http://purl.obolibrary.org/obo/NCIT_C21514 (e.g. obo:Per Day)</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>frequency_value</strong>: frequency value prescribe to the patient</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>agent</strong>: ATC URI-code for drugs components. (e.g. https://www.whocc.no/atc_ddd_index/?code=A07EA01)</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>agent</strong>: Full IRI used as annotation code for drugs components. (e.g. https://www.whocc.no/atc_ddd_index/?code=A07EA01)</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
+</ul>
+<hr>
+</section>
+<section id="hospitalization">
+<span id="hospitalization-glossary"></span><h3>Hospitalization<a class="headerlink" href="#hospitalization" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>model</strong>: Hospitalization</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>pid</strong>: individual identifier, in the form of a patient identifier.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value_datatype</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>valueIRI</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: Full IRI used for annotating the specific activity performed during the hospitalization, e.g.: <a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C164212">obo:Tumor Resection</a></p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>unit</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>target</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>protocol_id</strong>: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/hplc-sample-prep-4r3l25ew4l1y/v1</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>agent</strong>:</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>startdate</strong>: ISO 8601 formatted start date of observation</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>enddate</strong>: ISO 8601 formatted enddate of observation in case it is different from <code class="docutils literal notranslate"><span class="pre">startdate</span></code>.</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>age</strong>: patient age when this observation was taken, this age information can be both an addition or an alternative for <code class="docutils literal notranslate"><span class="pre">value</span></code>/<code class="docutils literal notranslate"><span class="pre">startdate</span></code>/<code class="docutils literal notranslate"><span class="pre">enddate</span></code> information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>comments</strong>: human readable comments of any kind related to this procedure.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>event_id</strong>: contextual identifier (formatted as <code class="docutils literal notranslate"><span class="pre">integer</span></code>) used for relating several of these data elements under the same visit occurrence event.</p></li>
 </ul>
@@ -700,10 +799,10 @@ Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-1
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>value_datatype</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>valueIRI</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: child of Intervention or Procedure http://purl.obolibrary.org/obo/NCIT_C25218 (ex: obo:Tumor Resection http://purl.obolibrary.org/obo/NCIT_C164212)</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/1589F0/1589F0.png" /> <strong>activity</strong>: Full IRI used for annotating the specific activity performed during the hospitalization, e.g.: <a class="reference external" href="http://purl.obolibrary.org/obo/NCIT_C164212">obo:Tumor Resection</a></p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>unit</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>input</strong>:</p></li>
-<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>target</strong>: child of Anatomic Structure, System, or Substance http://purl.obolibrary.org/obo/NCIT_C12219</p></li>
+<li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>target</strong>: Full IRI for anatomic structure that participates in the surgical intervention.</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/fb9902/fb9902.png" /> <strong>protocol_id</strong>: URL reference to a protocol, e.g. https://protocols.io deposit or any identifier that describes the specific properties of this clinical procedure. E.g. https://www.protocols.io/view/hplc-sample-prep-4r3l25ew4l1y/v1</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_type</strong>:</p></li>
 <li><p><img alt="" src="https://placehold.co/15x15/808080/808080.png" /> <strong>frequency_value</strong>:</p></li>
