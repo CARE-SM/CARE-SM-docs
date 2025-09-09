@@ -25,8 +25,8 @@ CARE-SM is built upon the [Semanticscience Integrated Ontology (SIO)](https://do
 Moreover, each instance within CARE-SM is associated with a domain-specific ontological class from the [OBO Foundry](http://obofoundry.org/). For instance, the representation of patient birthdate is described at an upper-class level using the ontological term [SIO:attribute](http://semanticscience.org/resource/SIO_000614) and, at a domain-specific level, as [ncit:Birthdate](http://purl.obolibrary.org/obo/NCIT_C68615). This dual ontological characterization enhances data interoperability and precise semantic descriptions.
 
 <p align="center">
-    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png" target="_blank">
-        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.png">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.drawio.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Core.drawio.png">
     </a>
     <b>Figure 1: Core structure </b></p>
 
@@ -44,15 +44,15 @@ In addition to the patient timeline and temporal information, related records ca
 The metadata layer is implemented using named graphs, encapsulating each complete record within a dedicated named graph, as illustrated in Figures 2 and 3. The use of named graphs enhances query efficiency. By combining a common pattern across all data elements with the computational benefits of using both RDF-Quads and RDF-Triples, the model enables more efficient querying and retrieval of patient data using standardized query patterns.
 
 <p align="center">
-    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png">
-        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.png">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.drawio.png">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Context.drawio.png">
     </a>
     <b>Figure 2: Longitudinal record representation </b></p>
 </p>
 
 <p align="center">
-    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Timeline.png">
-        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Timeline.png">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Timeline.drawio.png">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/CARE-SM-Timeline.drawio.png">
     </a>
     <b>Figure 3: Timeline of a patient medical history </b></p>
 </p>
