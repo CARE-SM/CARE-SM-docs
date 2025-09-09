@@ -90,7 +90,7 @@ Explore practical resources to help you understand and implement the CARE-SM.
 
 **CSV – Patient Data (Before & After)**
 
-Compare patient data representations **before and after** applying the CARE-SM Toolkit:  [CSV Data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/data/README.md)
+Compare patient data representations **before and after** applying the CARE-SM Toolkit:  [CSV Data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/)
 
 **YARRRML Template**
 
@@ -98,7 +98,7 @@ Planning a standalone implementation?  Re-use our YARRRML template to generate R
 
 **RDF – Semantic Representation**
 
-See the final RDF output of patient data modeled using CARE-SM: [RDF output data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/README.md)
+See the final RDF output of patient data modeled using CARE-SM: [RDF output data examples](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF/)
 
 **SPARQL – Query Examples and Validation**
 
