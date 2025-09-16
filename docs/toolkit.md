@@ -37,7 +37,7 @@ version: "3.8"
 
 services:
   api:
-    image: pabloalarconm/care-sm-toolkit:0.3.0
+    image: pabloalarconm/care-sm-toolkit:0.3.1 # Check latest version
     ports:
       - "8000:8000"
     volumes:
