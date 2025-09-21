@@ -484,7 +484,7 @@ The module shows how the individual, defined as a patient, participates in an in
 
 ## Ontological term used table
 
-| Label                                               | Ontology Term Code      |
+| Label                                               | Ontology Term Code       |
 |-----------------------------------------------------|--------------------------|
 | Agent Administration                                | NCIT_C70962              |
 | Alive                                               | SIO_010058               |
@@ -506,6 +506,7 @@ The module shows how the individual, defined as a patient, participates in an in
 | Data use permission                                 | DUO_0000001              |
 | Dead                                                | SIO_010059               |
 | Deathdate                                           | NCIT_C70810              |
+| Death Certificate                                   | NCIT_C163970             |
 | Diagnosis Code                                      | NCIT_C154625             |
 | Diagnostic Procedure                                | NCIT_C18020              |
 | Disability                                          | NCIT_C21007              |
@@ -515,8 +516,6 @@ The module shows how the individual, defined as a patient, participates in an in
 | Edmonton Symptom Assessment System                  | NCIT_C107391             |
 | Female                                              | NCIT_C16576              |
 | First Confirmed Visit                               | NCIT_C164021             |
-| Gene                                                | NCIT_C16612              |
-| Gene Variant                                        | NCIT_C97927              |
 | Genetic Testing                                     | NCIT_C15709              |
 | Hemizygosity                                        | GENO_0000134             |
 | Height                                              | NCIT_C25347              |
@@ -528,26 +527,26 @@ The module shows how the individual, defined as a patient, participates in an in
 | Laboratory procedure                                | NCIT_C25294              |
 | Lost To Follow-Up                                   | NCIT_C48227              |
 | Male                                                | NCIT_C20197              |
-| Messenger RNA                                       | NCIT_C813                |
 | Microarray Analysis                                 | NCIT_C18477              |
 | Milligram                                           | UO_0000022               |
-| Mitochondrial RNA                                   | NCIT_C25975              |
 | Nullizygosity                                       | GENO_0000978             |
 | Observation Result                                  | NCIT_C70856              |
 | Patient role                                        | OBI_0000093              |
+| Patient Reported Outcome                            | NCIT_C95401              |
 | Per Day                                             | NCIT_C66968              |
 | Phenotype                                           | NCIT_C16977              |
 | Prescribed Dose                                     | NCIT_C198143             |
 | Prescription drug administration specification      | PDRO_0000191             |
-| Protein                                             | NCIT_C17021              |
 | Protocol                                            | OBI_0000272              |
 | Refusal to Participate                              | NCIT_C124784             |
+| Research or Clinical Assessment Tool                | NCIT_C20993              |
 | Route of Administration                             | NCIT_C38114              |
 | Sampling specimens for biobank                      | OBIB_0000668             |
 | Sex Code                                            | NCIT_C160908             |
+| Sequence Identifier                                 | NCIT_C164607             |
+| Sequence Variant Report                             | NCIT_C171178             |
 | Surgical Procedure                                  | NCIT_C15329              |
 | Symptom Onset                                       | NCIT_C124353             |
-| Transfer RNA                                        | NCIT_C816                |
 | Tumor Resection                                     | NCIT_C164212             |
 | Undetermined                                        | NCIT_C124294             |
 | Undiagnosed                                         | NCIT_C113725             |
