@@ -154,7 +154,7 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: ISO 8601 formatted date of death (not date time)
 - ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**:
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png) **valueIRI**: Full IRI used as annonation code for the cause of the patient death.
 - ![](https://placehold.co/15x15/808080/808080.png) **activity**:
 - ![](https://placehold.co/15x15/808080/808080.png) **unit**:
 - ![](https://placehold.co/15x15/808080/808080.png) **input**:
@@ -166,29 +166,6 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation, could be the same of the `value`
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: Besides its named as "Deathdate", accepts "Age of Death" using this `age` column. Patient age when this observation was taken, this age information can be both an addition or an alternative for `value`/`startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
-<hr>
-
-(cause_death_glossary)=
-### Cause of death
-
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Cause_death
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **value**: human readable label associated to the cause of death.
-- ![](https://placehold.co/15x15/808080/808080.png) **value_datatype**:
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: Full IRI used as annonation code for the cause of the patient death.
-- ![](https://placehold.co/15x15/808080/808080.png) **activity**:
-- ![](https://placehold.co/15x15/808080/808080.png) **unit**:
-- ![](https://placehold.co/15x15/808080/808080.png) **input**:
-- ![](https://placehold.co/15x15/808080/808080.png) **target**:
-- ![](https://placehold.co/15x15/808080/808080.png) **protocol_id**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
-- ![](https://placehold.co/15x15/808080/808080.png) **frequency_value**:
-- ![](https://placehold.co/15x15/808080/808080.png) **agent**:
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation, could be the same of the `value`
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
-- ![](https://placehold.co/15x15/fb9902/fb9902.png) **age**: Patient age when this observation was taken, this age information can be both an addition or an alternative for `value`/`startdate`/`enddate` information. Its units are fractional years, so it accepts any decimal figure for age. E.g. 33.75 years.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **comments**: human readable comments of any kind related to this procedure.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **event_id**: contextual identifier (formatted as `integer`) used for relating several of these data elements under the same visit occurrence event.
 <hr>
@@ -506,23 +483,22 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/808080/808080.png)  **unit**:
 - ![](https://placehold.co/15x15/fb9902/fb9902.png)  **input**: Anatomical structure where the sample was extracted. Recommended a child of NCIT:Biospecimen or NCIT:Anatomic Structure, System, or Substance, e.g. NCIT:Blood Sample: http://purl.obolibrary.org/obo/NCIT_C17610
 - ![](https://placehold.co/15x15/fb9902/fb9902.png)  **target**: Zygosity associated with this particular genetic variant. Defined by GENO OBO Foundry ontology: One of the following:
-
     * [GENO:hemizygosity](http://purl.obolibrary.org/obo/GENO_0000134)
     * [GENO:heterozygosity](http://purl.obolibrary.org/obo/GENO_0000135)
     * [GENO:homozygosity](http://purl.obolibrary.org/obo/GENO_0000136)
     * [GENO:nullizygosity](http://purl.obolibrary.org/obo/GENO_0000978)
     * [GENO:compound heterozygosity](http://purl.obolibrary.org/obo/GENO_0000402)
-
 - ![](https://placehold.co/15x15/808080/808080.png)  **protocol_id**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **frequency_type**:
 - ![](https://placehold.co/15x15/808080/808080.png)  **frequency_value**:
-- ![](https://placehold.co/15x15/1589F0/1589F0.png)  **agent**: Molecular target type, refering to the level of molecular dogma central studied by the genetic variant. Some of the examples terminology from NCIT:
+- ![](https://placehold.co/15x15/fb9902/fb9902.png)  **agent**: IRI describing the level of pathogenecity of the sequence variant.
+<!--  Molecular target type, refering to the level of molecular dogma central studied by the genetic variant. Some of the examples terminology from NCIT:
     * [NCIT:Gene](http://purl.obolibrary.org/obo/NCIT_C16612)
     * [NCIT:Gene Variant](http://purl.obolibrary.org/obo/NCIT_C97927)
     * [NCIT:Protein](http://purl.obolibrary.org/obo/NCIT_C17021)
     * [NCIT:Messenger RNA](http://purl.obolibrary.org/obo/NCIT_C813)
     * [NCIT:Transfer RNA](http://purl.obolibrary.org/obo/NCIT_C816)
-    * [NCIT:Mitochondrial RNA](http://purl.obolibrary.org/obo/NCIT_C25975)
+    * [NCIT:Mitochondrial RNA](http://purl.obolibrary.org/obo/NCIT_C25975) -->
 
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **startdate**: ISO 8601 formatted start date of observation
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **enddate**: ISO 8601 formatted enddate of observation in case it is different from `startdate`.  
@@ -538,8 +514,8 @@ Here you can find the list of data elements and the columns required to be defin
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: individual identifier, in the form of a patient identifier.
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Score/value of the reported outcome.
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column type, e.g. `xsd:float` por a decimal score.
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **activity**: Full IRI that defines the specific clinical question defined in the questionnaire or PROM.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: Full URI/IRI that defines the specific clinical question defined in the questionnaire or Patient Reported Outcome (PRO).
+- ![](https://placehold.co/15x15/808080/808080.png) **activity**: 
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **unit**: unit of measurement coming from the reported outcome.
 - ![](https://placehold.co/15x15/808080/808080.png) **input**:
 - ![](https://placehold.co/15x15/808080/808080.png) **target**: 

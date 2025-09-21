@@ -19,8 +19,8 @@ data_elements
 :caption: Implementation Guide
 
 implementation
-toolkit
 glossary
+toolkit
 ```
 
 ```{toctree}
