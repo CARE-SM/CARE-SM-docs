@@ -62,7 +62,7 @@ The metadata layer is implemented using named graphs, encapsulating each complet
 - **Demographics:**
   - [Birthdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthdate)
   - [Birthyear](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthyear)
-  - [Country at birth](https://care-sm.readthedocs.io/en/latest/data_elements.html#country)
+  - [Birthplace](https://care-sm.readthedocs.io/en/latest/data_elements.html#birthplace)
   - [Deathdate](https://care-sm.readthedocs.io/en/latest/data_elements.html#deathdate)
   - [Sex](https://care-sm.readthedocs.io/en/latest/data_elements.html#sex)
 
@@ -77,13 +77,10 @@ The metadata layer is implemented using named graphs, encapsulating each complet
   - [Examination](https://care-sm.readthedocs.io/en/latest/data_elements.html#examination)
 
 - **Clinical measurements:**
-  <!-- - [Corporal measurement](https://care-sm.readthedocs.io/en/latest/data_elements.html#corporal-measurements) -->
-  - [Laboratory measurement](https://care-sm.readthedocs.io/en/latest/data_elements.html#laboratory-measurement)
-  <!-- - [Medical imaging](https://care-sm.readthedocs.io/en/latest/data_elements.html#medical-imaging) -->
-  - [Genetic testing](https://care-sm.readthedocs.io/en/latest/data_elements.html#genetic-testing)
+  - [Laboratory](https://care-sm.readthedocs.io/en/latest/data_elements.html#laboratory-measurement)
+  - [Genetic](https://care-sm.readthedocs.io/en/latest/data_elements.html#genetic-testing)
 
 - **Treatments and interventions:**
-  - [Prescription](https://care-sm.readthedocs.io/en/latest/data_elements.html#prescription)
   - [Medication](https://care-sm.readthedocs.io/en/latest/data_elements.html#medication)
   - [Hospitalization](https://care-sm.readthedocs.io/en/latest/data_elements.html#hospitalization)
   - [Surgery](https://care-sm.readthedocs.io/en/latest/data_elements.html#surgical-intervention)
@@ -96,3 +93,4 @@ The metadata layer is implemented using named graphs, encapsulating each complet
   - [Biobank](https://care-sm.readthedocs.io/en/latest/data_elements.html#biobank)
   - [Consent](https://care-sm.readthedocs.io/en/latest/data_elements.html#consent)
   - [Clinical trial](https://care-sm.readthedocs.io/en/latest/data_elements.html#clinical-trial)
+  - [Cohort](https://care-sm.readthedocs.io/en/latest/data_elements.html#cohort)
