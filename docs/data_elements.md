@@ -61,7 +61,7 @@ The country in which the patient was born.
 
 **Data visualization**
 
-The full date on which the patient's death, recorded in ISO 8601 formatted date. Also  the underlying medical condition that directly led to the patient’s death. Typically recorded using a standardized coding system such as ICD-10 or Orphanet.
+The full date on which the patient's death, recorded in ISO 8601 formatted date. Also  the underlying medical condition that directly led to the patient’s death.
 
 <p align="center">
     <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Deathdate.drawio.png" target="_blank">
@@ -177,7 +177,7 @@ This module describes the data element in the Common Data Elemments group. These
 
 **Data visualization**
 
-Describes qualitative observable characteristics, signs, or traits expressed by the patient, often captured using the Human Phenotype Ontology (HPO).
+Describes qualitative observable characteristics, signs, or traits expressed by the patient.
 
 <p align="center">
     <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Phenotype.drawio.png" target="_blank">
@@ -196,7 +196,7 @@ This module describes the data element in the Common Data Elemments group. These
 
 **Data visualization**
 
-A clinically established identification of a disease or condition affecting the patient, usually represented using coding systems like ICD, SNOMED CT, or Orphanet.
+A clinically established identification of a disease or condition affecting the patient.
 
 <p align="center">
     <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Diagnosis.drawio.png" target="_blank">
@@ -235,7 +235,7 @@ This module describes the data element in the Common Data Elemments group. These
 
 **Data visualization**
 
-Results from genomic analyses performed on the patient’s DNA or RNA. Findings may include details such as the specific testing method used—such as panel testing, exome sequencing, or genome-wide analysis—as well as the identified variants, the source of the biological sample, and zygosity information.
+Results from genomic analyses performed on the patient’s DNA or RNA. Findings may include details such as the specific genetic method, as well as the identified variants, the source of the biological sample, and zygosity information.
 
 <p align="center">
     <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Genetic.drawio.png" target="_blank">
@@ -254,7 +254,7 @@ Results from genomic analyses performed on the patient’s DNA or RNA. Findings 
 
 **Data visualization**
 
-Structured responses provided by the patient or caregiver through standardized forms or surveys and standarized by Patient Reported Outcomes (PRO) or similar assessment questions.
+Structured responses provided by the patient through standardized forms or surveys and standarized by Patient Reported Outcomes (PRO) or similar assessment questions.
 
 <p align="center">
     <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Questionnaire.drawio.png" target="_blank">
@@ -289,7 +289,7 @@ Measures the extent of impairment in the patient's physical, mental, or social f
 (medication)=
 ## Medication
 
-Records of medications that have been administered to the patient by a healthcare professional. Includes details such as drug name, dosage, frequency, route of administration, and prescribed duration.
+Records of medications that have been prescribed or administered to the patient by a healthcare professional. Includes details such as drug name, dosage, frequency, route of administration, and medication duration.
 
 **Data visualization**
 
@@ -349,7 +349,7 @@ This module describes the data element in the Common Data Elemments group. These
 
 **Data visualization**
 
- A record indicating whether the patient has donated biological samples (such as blood, tissue, or DNA) for long-term storage in a biobank. This representation includes information on the type of samples collected and date of collection.
+A record indicating whether the patient has donated biological samples for long-term storage in a biobank. This entry includes information on the type of samples collected, the date of collection, the sample accession number, and details about the biobank.
 
 <p align="center">
     <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Biobank.drawio.png" target="_blank">
@@ -377,7 +377,9 @@ The module shows how the individual, defined as a patient, participates in an in
     </a>
 </p>
 
-**DISCLAIMER:** This element is not being implemented, its only an incomplete and limitated representation of patient consent. If you are interested in using it or implementing it, please contact us.
+**RDF-Quad Examples:** Sample RDF-Quad representations of this data element are available, generated by our implementation workflows. [CARE-SM Implementation Github repository](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/RDF)
+
+**How to populate this data using CARE-SM:** A CSV glossary for this data element is described in our Implementation Guide. [Check our CSV Glossary](https://care-sm.readthedocs.io/en/latest/glossary.html#consent).
 
 (clinical_trial)=
 ## Clinical trial
@@ -398,7 +400,7 @@ The module shows how the individual, defined as a patient, participates in an in
 
 
 (cohort)=
-## cohort
+## Cohort
 
 **Data visualization**
 
@@ -415,85 +417,8 @@ The module shows how the individual, defined as a patient, participates in an in
 **How to populate this data using CARE-SM:** A CSV glossary for this data element is described in our Implementation Guide. [Check our CSV Glossary](https://care-sm.readthedocs.io/en/latest/glossary.html#clinical-trial).
 
 
-# List of ontological terms used
 
-## Ontological term used table
-
-| Label                                               | Ontology Term Code       |
-|-----------------------------------------------------|--------------------------|
-| Agent Administration                                | NCIT_C70962              |
-| Alive                                               | SIO_010058               |
-| Birth Year                                          | NCIT_C83164              |
-| Birthdate                                           | NCIT_C68615              |
-| Biobank                                             | OBIB_0000616             |
-| Blood                                               | NCIT_C12434              |
-| Blood Sample                                        | NCIT_C17610              |
-| Body Mass Index                                     | NCIT_C16358              |
-| Cerebrospinal Fluid                                 | NCIT_C12692              |
-| Clinical Trial Final Report                         | NCIT_C115575             |
-| Clinical or Research Assessment Question            | NCIT_C91102              |
-| Clinical assessment                                 | MAXO_0000487             |
-| Clinical trial                                      | NCIT_C71104              |
-| Compound heterozygosity                             | GENO_0000402             |
-| Creatinine                                          | NCIT_C399                |
-| Creatinine Clearance Adjusted for BSA               | NCIT_C147324             |
-| Data capture                                        | NCIT_C142470             |
-| Data use permission                                 | DUO_0000001              |
-| Dead                                                | SIO_010059               |
-| Deathdate                                           | NCIT_C70810              |
-| Death Certificate                                   | NCIT_C163970             |
-| Diagnosis Code                                      | NCIT_C154625             |
-| Diagnostic Procedure                                | NCIT_C18020              |
-| Disability                                          | NCIT_C21007              |
-| Dose                                                | NCIT_C25488              |
-| Dose Administered                                   | NCIT_C167190             |
-| Drug Product Component                              | NCIT_C177929             |
-| Edmonton Symptom Assessment System                  | NCIT_C107391             |
-| Female                                              | NCIT_C16576              |
-| First Confirmed Visit                               | NCIT_C164021             |
-| Genetic Testing                                     | NCIT_C15709              |
-| Hemizygosity                                        | GENO_0000134             |
-| Height                                              | NCIT_C25347              |
-| Hospitalization                                     | NCIT_C25179              |
-| Homozygosity                                        | GENO_0000136             |
-| Informed consent process                            | OBI_0000810              |
-| Intravenous Route of Administration                 | NCIT_C38276              |
-| Kilogram                                            | UO_0000009               |
-| Laboratory procedure                                | NCIT_C25294              |
-| Lost To Follow-Up                                   | NCIT_C48227              |
-| Male                                                | NCIT_C20197              |
-| Microarray Analysis                                 | NCIT_C18477              |
-| Milligram                                           | UO_0000022               |
-| Nullizygosity                                       | GENO_0000978             |
-| Observation Result                                  | NCIT_C70856              |
-| Patient role                                        | OBI_0000093              |
-| Patient Reported Outcome                            | NCIT_C95401              |
-| Per Day                                             | NCIT_C66968              |
-| Phenotype                                           | NCIT_C16977              |
-| Prescribed Dose                                     | NCIT_C198143             |
-| Prescription drug administration specification      | PDRO_0000191             |
-| Protocol                                            | OBI_0000272              |
-| Refusal to Participate                              | NCIT_C124784             |
-| Research or Clinical Assessment Tool                | NCIT_C20993              |
-| Route of Administration                             | NCIT_C38114              |
-| Sampling specimens for biobank                      | OBIB_0000668             |
-| Sex Code                                            | NCIT_C160908             |
-| Sequence Identifier                                 | NCIT_C164607             |
-| Sequence Variant Report                             | NCIT_C171178             |
-| Surgical Procedure                                  | NCIT_C15329              |
-| Symptom Onset                                       | NCIT_C124353             |
-| Tumor Resection                                     | NCIT_C164212             |
-| Undetermined                                        | NCIT_C124294             |
-| Undiagnosed                                         | NCIT_C113725             |
-| Unknown                                             | NCIT_C17998              |
-| Weight                                              | NCIT_C25208              |
-| Willingness to be contacted for a research study    | OBIB_0000488             |
-| drug administration specification                   | PDRO_0010022             |
-| compound heterozygosity                             | GENO_0000402             |
-| heterozygosity                                      | GENO_0000135             |
-
-
-## Ontogies used table
+# List of ontogies used
 
 | Prefix | Ontology Name or Namespace                            | Prefix IRI                                        |
 |--------|--------------------------------------------------------|--------------------------------------------------|
@@ -505,4 +430,5 @@ The module shows how the individual, defined as a patient, participates in an in
 | duo    | Data Use Ontology                                     | http://purl.obolibrary.org/obo/DUO_              |
 | uo     | Units of Measurement Ontology                         | http://purl.obolibrary.org/obo/UO_               |
 | maxo   | Medical Action Ontology                               | http://purl.obolibrary.org/obo/MAXO_             |
-| pdro   | Prescription of Drugs Ontology                        | http://purl.obolibrary.org/obo/PDRO_             |
+| opmi   | Ontology of Precision Medicine and Investigation      | http://purl.obolibrary.org/obo/OPMI_             |
+| ogms   | Ontology for General Medical Science                  | http://purl.obolibrary.org/obo/OGMS_             |
