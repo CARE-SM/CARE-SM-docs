@@ -393,7 +393,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Laboratory
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: Patient Unique Identifier.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Lexical consent statement response.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: value of the laboratory measurement.
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **value_datatype**: XSD datatype that defines `value` column.
 - ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**: 
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **activity**: Full concept IRI for the specific method annonation.
@@ -493,7 +493,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: Patient Unique Identifier.
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **value**: Prescribed or Administrated dose value.
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **value_datatype**: XSD datatype that defines `value` column type.
-- ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**: Full concept IRI for the definition of the type of medication. (Drug Prescription or Administration).**
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **valueIRI**: Full concept IRI for the definition of the type of medication. (Drug Prescription or Administration).**
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **activity**: Full concept IRI for the route of administration.
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **unit**: Full concept IRI for the unit of measurement.
 - ![](https://placehold.co/15x15/808080/808080.png) **input**:
