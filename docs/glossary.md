@@ -360,7 +360,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 <hr>
 
 (consent_glossary)=
-## Consent
+### Consent
 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **model**: Consent
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **pid**: Patient Unique Identifier.
