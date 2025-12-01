@@ -448,7 +448,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.co/15x15/808080/808080.png) **valueIRI**:
 - ![](https://placehold.co/15x15/808080/808080.png) **activity**: 
 - ![](https://placehold.co/15x15/fb9902/fb9902.png) **unit**: Full concept IRI for the unit of measurement.
-- ![](https://placehold.co/15x15/1589F0/1589F0.png) **input**: Full concept IRI for the clinical question performed.
+- ![](https://placehold.co/15x15/1589F0/1589F0.png) **input**: Full concept IRI for the clinical question or statement to report.
 - ![](https://placehold.co/15x15/808080/808080.png) **target**: 
 - ![](https://placehold.co/15x15/1589F0/1589F0.png) **specification**: Full concept IRI for the assessment tool or Patient Reported Outcome Measures specification.
 - ![](https://placehold.co/15x15/808080/808080.png) **frequency_type**:
