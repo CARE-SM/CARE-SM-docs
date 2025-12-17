@@ -12,7 +12,7 @@ The following table is the complete list of available columns:
 | `pid`              | Literal (integer)  | Patient unique identifier. |
 | `event_id`         | Literal (integer)  | Event-specific identifier used to contextualize several data elements under the same medical visit or encounter. |
 | `value`            | Literal (string, number, or date)  | Lexical value of this data element. |
-| `value_datatype`   | Literal (string)   | Additional metadata of the `value` column, using the [XML Schema Definition Language (XSD)](https://www.w3.org/TR/xmlschema11-1/). Expected to be a literal such as `xsd:date` or `xsd:string`. |
+| `value_datatype`   | Literal (string)   | Additional metadata of the `value` column, using the [XML Schema Definition Language (XSD)](https://www.w3.org/TR/xmlschema11-1/). Expected datatype: `xsd:date`, `xsd:string`, `xsd:float` or `xsd:integer`.|
 | `valueIRI`         | IRI      | Full IRI-based value of the data element. |
 | `activity`         | IRI      | Full conceptual IRI describing a specific process associated with this data element, such as a clinical method or route of administration. |
 | `unit`             | IRI      | Full conceptual IRI describing the data element’s unit of measurement. |
@@ -35,20 +35,20 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 1. **Create the CSV File**  
    
    This document would only allow a set of concrete columns names:
-   - `model`, `pid`, `event_id`, `value`, `age`, `value_datatype`, `valueIRI`, `activity`, `unit`, `input`, `target`, `specification`, `frequency_type`, `frequency_value`, `agent`, `startdate`, `enddate`, `comments`,`organisation`, `organisation_type`.
+   - `model`, `pid`, `event_id`, `value`, `age`, `value_datatype`, `valueIRI`, `activity`, `unit`, `input`, `target`, `specification`, `frequency_type`, `frequency_value`, `agent`, `startdate`, `enddate`, `comments`,`organisation`.
 
    *Example:*
    ```text
-   model,pid,event_id,value,age,value_datatype,valueIRI,activity,unit,input,target,specification,frequency_type,frequency_value,agent,startdate,enddate,comments,organisation,organisation_type
-   ,,,,,,,,,,,,,,,,,,,
+   model,pid,event_id,value,age,value_datatype,valueIRI,activity,unit,input,target,specification,frequency_type,frequency_value,agent,startdate,enddate,comments,organisation
+   ,,,,,,,,,,,,,,,,,,
    ```
 2. **Populate Data**  
    Each data entry needs specific fields (not all fields are mandatory). See the glossary below for details.
 
     *Example:*
     ```text
-    model,pid,event_id,value,age,value_datatype,valueIRI,activity,unit,input,target,specification,frequency_type,frequency_value,agent,startdate,enddate,comments,organisation,organisation_type
-    Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-19,,,,
+    model,pid,event_id,value,age,value_datatype,valueIRI,activity,unit,input,target,specification,frequency_type,frequency_value,agent,startdate,enddate,comments,organisation
+    Diagnosis,30056,,,,,http://www.orpha.net/ORDO/Orphanet_93552,,,,,,,,,,,2006-01-19,,,
     ```
 
     For more examples, refer to the [`exemplar_data`](https://github.com/CARE-SM/CARE-SM-Implementation/tree/main/CSV/data) folder.
