@@ -432,3 +432,5 @@ The module shows how the individual, defined as a patient, participates in an in
 | maxo   | Medical Action Ontology                               | http://purl.obolibrary.org/obo/MAXO_             |
 | opmi   | Ontology of Precision Medicine and Investigation      | http://purl.obolibrary.org/obo/OPMI_             |
 | ogms   | Ontology for General Medical Science                  | http://purl.obolibrary.org/obo/OGMS_             |
+| iao    | Information Artifact Ontology                         | http://purl.obolibrary.org/obo/IAO_              |
+| omit   | Ontology for MIRNA Target                             | http://purl.obolibrary.org/obo/OMIT_             |
