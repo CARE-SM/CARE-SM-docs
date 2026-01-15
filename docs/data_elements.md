@@ -45,8 +45,8 @@ The country in which the patient was born.
 **Data visualization**
 
 <p align="center">
-    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Country.drawio.png" target="_blank">
-        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Country.drawio.png">
+    <a href="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Birthplace.drawio.png" target="_blank">
+        <img src="https://raw.githubusercontent.com/CARE-SM/CARE-Semantic-Model/main/images/obo/CARE-SM-obo-Birthplace.drawio.png">
     </a>
 </p>
 
