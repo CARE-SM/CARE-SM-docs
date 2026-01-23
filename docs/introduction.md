@@ -74,9 +74,9 @@ The metadata layer is implemented using named graphs, encapsulating each complet
 - **Conditions and findings:**
   - [Diagnosis](https://care-sm.readthedocs.io/en/latest/data_elements.html#diagnosis)
   - [Phenotype](https://care-sm.readthedocs.io/en/latest/data_elements.html#phenotype)
-  - [Examination](https://care-sm.readthedocs.io/en/latest/data_elements.html#examination)
 
 - **Clinical measurements:**
+  - [Examination](https://care-sm.readthedocs.io/en/latest/data_elements.html#examination)
   - [Laboratory](https://care-sm.readthedocs.io/en/latest/data_elements.html#laboratory-measurement)
   - [Genetic](https://care-sm.readthedocs.io/en/latest/data_elements.html#genetic-testing)
 

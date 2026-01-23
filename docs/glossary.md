@@ -23,7 +23,7 @@ The following table is the complete list of available columns:
 | `frequency_value`  | Literal (string)  | Numerical frequency value; combined with `frequency_type`, it defines the full frequency (e.g., “2 times per month”). |
 | `agent`            | IRI      | Full conceptual IRI defining an additional agent participating in the data element definition. |
 | `startdate`        | Literal (ISO 8601 date)    | Start date of the data registration or time instant when the observation was taken. If identical to `value`, it is not required. |
-| `enddate`          | Literal (ISO 8601 date)    | End date of the data registration, if it 's different from `startdate`. |
+| `enddate`          | Literal (ISO 8601 date)    | End date of the data registration, if it 's different from `startdate`. No need to add `enddate` if its a time point, only is required. |
 | `age`              | Literal (integer)  | Age of the patient at the time of observation. |
 | `comments`         | Literal (string)   | Human-readable comments or descriptions related to this data element. |
 | `organisation`     | IRI      | IRI used to define the organisation identifier. |
@@ -278,36 +278,6 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
 <hr>
 
-(examination_glossary)=
-### Examination
-
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Examination
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **pid**: Patient Unique Identifier.
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value**: Resulting value from this examination.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **value_datatype**: XSD datatype that defines `value` column.
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **valueIRI**: Full concept IRI for the patient attribute/finding examined annotation.**
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **activity**: Full concept IRI for the specific method activity.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **unit**: Full concept IRI for the unit of measurement.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **input**:
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **target**: Full concept IRI for the anatomic structure examined.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **specification**: URL reference to any protocol.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**: 
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **startdate**: ISO 8601-formatted start date of the data registration.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
-
-** If you are representing CARE-SM with the **OBO Foundry**, this is some example using **NCIT terms**:
-  - http://purl.obolibrary.org/obo/NCIT_C25208 (Weight)
-  - http://purl.obolibrary.org/obo/NCIT_C25347 (Height)
-  - http://purl.obolibrary.org/obo/NCIT_C99524 (Left Ventricular Ejection Fraction)
-  - http://purl.obolibrary.org/obo/NCIT_C16358 (Body Mass Index)
-<hr>
-
 (phenotype_glossary)=
 ### Phenotype
 
@@ -359,22 +329,22 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
 <hr>
 
-(consent_glossary)=
-### Consent
+(examination_glossary)=
+### Examination
 
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Consent
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Examination
 - ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **pid**: Patient Unique Identifier.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **value**: some label describing consent outcome
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **value_datatype**:
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **valueIRI**: Full concept IRI that describes the consent statement.**
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **activity**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **unit**:
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value**: Resulting value from this examination.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **value_datatype**: XSD datatype that defines `value` column.
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **valueIRI**: Full concept IRI for the patient attribute/finding examined annotation.**
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **activity**: Full concept IRI for the specific method activity.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **unit**: Full concept IRI for the unit of measurement.
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **input**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **target**:
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **specification**: IRI reference to any associated protocol.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **target**: Full concept IRI for the anatomic structure examined.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **specification**: URL reference to any protocol.
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**: 
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **startdate**: ISO 8601-formatted start date of the data registration.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
@@ -382,10 +352,11 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
 
-** If you are representing CARE-SM with the **OBO Foundry**, use the one of the following **DUO and OBIB terms**:
-  - http://purl.obolibrary.org/obo/DUO_0000001 (Data Use Permission)
-  - http://purl.obolibrary.org/obo/OBIB_0000488 (willingness to be contacted)
-
+** If you are representing CARE-SM with the **OBO Foundry**, this is some example using **NCIT terms**:
+  - http://purl.obolibrary.org/obo/NCIT_C25208 (Weight)
+  - http://purl.obolibrary.org/obo/NCIT_C25347 (Height)
+  - http://purl.obolibrary.org/obo/NCIT_C99524 (Left Ventricular Ejection Fraction)
+  - http://purl.obolibrary.org/obo/NCIT_C16358 (Body Mass Index)
 <hr>
 
 (laboratory_glossary)=
@@ -431,54 +402,6 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **agent**: Full concept IRI for the associated zygosity annotation.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **startdate**: ISO 8601-formatted start date of the data registration.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
-<hr>
-
-(questionnaire_glossary)=
-### Questionnaire
-
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Questionnaire
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **pid**: Patient Unique Identifier.
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value**: Score/value of the patient reported response.
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value_datatype**: XSD datatype that defines `value` column.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **valueIRI**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **activity**: 
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **unit**: Full concept IRI for the unit of measurement.
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **input**: Full concept IRI for the clinical question or statement to report.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **target**: 
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **specification**: Full concept IRI for the assessment tool or Patient Reported Outcome Measures specification.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **startdate**: ISO 8601-formatted start date of the data registration.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
-<hr>
-
-(disability_glossary)=
-### Disability
-
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Disability
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **pid**: Patient Unique Identifier.
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value**: Score/value of the patient reported response.
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value_datatype**: XSD datatype that defines `value` column.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **valueIRI**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **activity**: 
-- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **unit**: Full concept IRI for the unit of measurement.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **input**: Full concept IRI for the clinical question performed.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **target**: 
-- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **specification**: Full concept IRI for the assessment tool or questionnaire specification.
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
-- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **startdate**: ISO 8601-formatted start date of the data registration.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
@@ -561,6 +484,54 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
 <hr>
 
+(questionnaire_glossary)=
+### Questionnaire
+
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Questionnaire
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **pid**: Patient Unique Identifier.
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value**: Score/value of the patient reported response.
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value_datatype**: XSD datatype that defines `value` column.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **valueIRI**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **activity**: 
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **unit**: Full concept IRI for the unit of measurement.
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **input**: Full concept IRI for the clinical question or statement to report.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **target**: 
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **specification**: Full concept IRI for the assessment tool or Patient Reported Outcome Measures specification.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **startdate**: ISO 8601-formatted start date of the data registration.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
+<hr>
+
+(disability_glossary)=
+### Disability
+
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Disability
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **pid**: Patient Unique Identifier.
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value**: Score/value of the patient reported response.
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **value_datatype**: XSD datatype that defines `value` column.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **valueIRI**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **activity**: 
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **unit**: Full concept IRI for the unit of measurement.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **input**: Full concept IRI for the clinical question performed.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **target**: 
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **specification**: Full concept IRI for the assessment tool or questionnaire specification.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **startdate**: ISO 8601-formatted start date of the data registration.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
+<hr>
+
 (biobank_glossary)=
 ### Biobank
 
@@ -585,6 +556,34 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **organisation**: Associated biobank identifier. 
 <hr>
 
+(consent_glossary)=
+### Consent
+
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **model**: Consent
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **pid**: Patient Unique Identifier.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **value**: some label describing consent outcome
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **value_datatype**:
+- ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **valueIRI**: Full concept IRI that describes the consent statement.**
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **activity**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **unit**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **input**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **target**:
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **specification**: IRI reference to any associated protocol.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **startdate**: ISO 8601-formatted start date of the data registration.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **enddate**: ISO 8601-formatted end date of the data registration in case it is different from `startdate`.  
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **age**: The patient’s age at the time the observation was taken.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
+- ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **organisation**:
+
+** If you are representing CARE-SM with the **OBO Foundry**, use the one of the following **DUO and OBIB terms**:
+  - http://purl.obolibrary.org/obo/DUO_0000001 (Data Use Permission)
+  - http://purl.obolibrary.org/obo/OBIB_0000488 (willingness to be contacted)
+<hr>
+
 (clinical_trial_glossary)=
 ### Clinical trial
 
@@ -606,6 +605,7 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **organisation**: Medical/research center identifier associated with the clinical trial.
+<hr>
 
 (cohort_glossary)=
 ### Cohort
@@ -628,3 +628,4 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **comments**: Additional human-readable comments.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **event_id**: Visit occurrence identifier.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **organisation**: Medical/research center identifier associated with the clinical trial.
+<hr>
