@@ -37,7 +37,7 @@ version: "3.8"
 
 services:
   api:
-    image: pabloalarconm/care-sm-toolkit:0.3.1 # Check latest version
+    image: pabloalarconm/care-sm-toolkit:1.1.0 # Check latest version
     ports:
       - "8000:8000"
     volumes:
@@ -70,28 +70,11 @@ docker compose down
 
 ## Local implementation
 
-If you are not interested in running our Docker image, you can install the Python module for local implementation.
-
-###  Installation
- 
-Python 3.5 or later is needed. The script depends on standard libraries, plus the ones declared in [requirements.txt](https://github.com/CARE-SM/CARE-SM-Toolkit/blob/main/requirements.txt).
- 
-In order to install the dependencies you need `pip` and `venv` Python modules.
-    - `pip` is available in many Linux distributions (Ubuntu package `python-pip`, CentOS EPEL package `python-pip`), and also as [pip](https://pip.pypa.io/en/stable/) Python package.
-    - `venv` is also available in many Linux distributions (Ubuntu package `python3-venv`). In some of these distributions `venv` is integrated into the Python 3.5 (or later) installation.
-
-The creation of a virtual environment and installation of the dependencies in that environment is done running:
+If you are not interested in running our Docker image, you can install the Python module for local implementation. 
 
 ```
-python3 -m venv envCARESM
-source envCARESM/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
+pip install care-sm-toolkit==1.1.0
 ```
-
-Remember to `deactivate` your Python environment after using it.
-
-###  Execution
 
 Then, change the folder path inside the [trial.py](https://github.com/CARE-SM/CARE-SM-Toolkit/blob/main/trial.py) script. And run it:
 

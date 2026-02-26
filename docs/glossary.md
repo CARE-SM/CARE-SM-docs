@@ -19,6 +19,9 @@ The following table is the complete list of available columns:
 | `input`            | IRI      | Full conceptual IRI defining any input associated with the clinical procedure, such as a medication used or a related tissue sample. |
 | `target`           | IRI      | Full conceptual IRI defining any target associated with the clinical procedure, such as an anatomical structure or a molecule. |
 | `specification`    | IRI      | Full conceptual IRI specifying any protocol or document that contextualizes the reported data element. |
+| `duration_value`    | Literal (ISO 8601 duration      | Duration value, for instance, P10Y . it will be datatyped as `xsd:duration`. |
+| `duration_startdate`   | Literal (ISO 8601 date)      | Start date of the duration time interval. |
+| `duration_enddate`    | Literal (ISO 8601 date)     | End date of the duration interval.|
 | `frequency_type`   | IRI      | Full conceptual IRI defining the frequency type of the associated clinical procedure. |
 | `frequency_value`  | Literal (string)  | Numerical frequency value; combined with `frequency_type`, it defines the full frequency (e.g., “2 times per month”). |
 | `agent`            | IRI      | Full conceptual IRI defining an additional agent participating in the data element definition. |
@@ -292,6 +295,9 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **input**:
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **target**: Full concept IRI for the anatomic region where the observation was diagnosed, including the cardinality if possible.
 - ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **specification**: IRI reference to any associated protocol.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **duration_value**: ISO 8601 duration value of the phenotype duration interval, for instance, P10Y.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **duration_startdate**: ISO 8601 start date of the phenotype duration interval.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **duration_enddate**: ISO 8601 start date of the phenotype duration interval.
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
@@ -521,6 +527,9 @@ This guide explains how to structure, populate, and utilize CSV files for patien
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **input**: Full concept IRI for the clinical question performed.
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **target**: 
 - ![](https://placehold.jp/12/2854d7/ffffff/20x20.png?text=M) **specification**: Full concept IRI for the assessment tool or questionnaire specification.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **duration_value**: ISO 8601 duration value of the disability duration interval, for instance, P10Y.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **duration_startdate**: ISO 8601 start date of the disability duration interval.
+- ![](https://placehold.jp/12/d7a028/000000/20x20.png?text=O) **duration_enddate**: ISO 8601 start date of the disability duration interval.
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_type**:
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **frequency_value**:
 - ![](https://placehold.jp/12/a29e96/000000/20x20.png?text=N) **agent**:
